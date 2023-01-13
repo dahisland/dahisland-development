@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SectionProjectsFigcaption from "./SectionProjectsFigcaption";
 
 const SectionProjectsFigure = ({
   dataGallery,
@@ -7,17 +8,6 @@ const SectionProjectsFigure = ({
   slide,
   setSlide,
 }) => {
-  const randomClassTags = [
-    "galleryCaption_tags--purple",
-    "galleryCaption_tags--purple-fill",
-    "galleryCaption_tags--white",
-    "galleryCaption_tags--white-fill",
-    "galleryCaption_tags--blue",
-    "galleryCaption_tags--blue-fill",
-    "galleryCaption_tags--gold-fill",
-    "galleryCaption_tags--gold",
-  ];
-
   return (
     <figure
       className={`projectsGallery_container`}
@@ -30,41 +20,10 @@ const SectionProjectsFigure = ({
           alt={dataGallery[indexGallery].name}
         />
       </picture>
-      <figcaption className="projectsGallery_caption">
-        <div className="galleryCaption_description">
-          <h2>{dataGallery[indexGallery].name}</h2>
-          {dataGallery[indexGallery].tags.map((item) => (
-            <span
-              key={dataGallery[indexGallery].name + item}
-              className={
-                "galleryCaption_tags" +
-                " " +
-                randomClassTags[
-                  Math.floor(Math.random() * randomClassTags.length)
-                ]
-              }
-            >
-              {item.toUpperCase()}
-            </span>
-          ))}
-        </div>
-        <div className="galleryCaption_links">
-          <a
-            href={dataGallery[indexGallery].github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-          <a
-            href={dataGallery[indexGallery].view}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Website
-          </a>
-        </div>
-      </figcaption>
+      <SectionProjectsFigcaption
+        dataGallery={dataGallery}
+        indexGallery={indexGallery}
+      />
     </figure>
   );
 };
@@ -72,8 +31,8 @@ const SectionProjectsFigure = ({
 SectionProjectsFigure.propTypes = {
   dataGallery: PropTypes.array,
   indexGallery: PropTypes.number,
-  slide: PropTypes.number,
   setSlide: PropTypes.func,
+  slide: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default SectionProjectsFigure;

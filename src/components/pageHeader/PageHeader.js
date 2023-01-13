@@ -5,7 +5,12 @@ import ContactMail from "../contactMail/ContactMail";
 import Navigation from "../navigation/Navigation";
 import SocialMedias from "../socialMedias/SocialMedias";
 
-const PageHeader = ({ data, positionScrollY, windowHeight }) => {
+const PageHeader = ({
+  data,
+  positionScrollY,
+  windowHeight,
+  setContactModale,
+}) => {
   return (
     <header>
       <div className="header_logo">
@@ -32,7 +37,7 @@ const PageHeader = ({ data, positionScrollY, windowHeight }) => {
       />
 
       <div className="header_contact">
-        <ContactMail />
+        <ContactMail setContactModale={setContactModale} />
         <SocialMedias />
       </div>
 
@@ -45,6 +50,7 @@ PageHeader.propTypes = {
   data: PropTypes.array,
   positionScrollY: PropTypes.number,
   windowHeight: PropTypes.number,
+  setContactModale: PropTypes.func,
 };
 
 export default PageHeader;

@@ -1,10 +1,13 @@
-@import "./reset";
+@import "./default";
+
+@import "./contactModale";
 
 @import "../components/switchLanguage/switchLanguage";
 @import "../components/btnScrollToTop/btnScrollToTop";
 @import "../components/pageHeader/pageHeader";
 @import "../components/navigation/navigation";
 @import "../components/contactMail/contactMail";
+@import "../components/contactForm/contactForm";
 @import "../components/socialMedias/socialMedias";
 
 @import "../components/sectionAbout/sectionAbout";

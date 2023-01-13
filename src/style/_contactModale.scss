@@ -1,0 +1,61 @@
+@import "./utils";
+
+#contactModale_innerContainer {
+  width: 50%;
+  padding: 3rem;
+  overflow-y: auto;
+  @include responsiveTabloids {
+    width: 80%;
+  }
+  @include responsiveSmartphones {
+    width: 90%;
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}
+
+#contactModale_header {
+  left: 3.3rem;
+  right: 3.5rem;
+  top: 1rem;
+  @include responsiveSmartphones {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+#contactModale_title {
+  font-size: map-get($sizes, xl);
+  @include responsiveSmartphones {
+    font-size: 20px;
+  }
+}
+
+#contactModale_content {
+  text-align: left;
+}
+
+@keyframes anim-contactIcon {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+#contactModale_icon {
+  display: flex;
+  padding: 0.2rem;
+  font-size: 17px;
+  transform: rotate(45deg);
+  @include responsiveSmartphones {
+    font-size: 15px;
+  }
+  &:hover {
+    background-color: map-get($colors, grass);
+    animation: anim-contactIcon 3000ms infinite linear;
+  }
+  svg {
+    transform: rotate(-45deg);
+  }
+}

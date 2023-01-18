@@ -18,18 +18,35 @@ import { ModaleFullscreen } from "modale-fullscreen-customizable";
 import { contactFormData } from "./data/contactFormData";
 
 function App() {
-  // const [pathLength, setPathLength] = useState(0);
   const [language, setLanguage] = useState("fr");
-  const [positionScrollY, setPositionScrollY] = useState(0);
+  const [positionScrollY, setPositionScrollY] = useState(1);
   const [contactModale, setContactModale] = useState(false);
+  // State all sections heights
+  const [sectionsHeight, setSectionsHeight] = useState({
+    aboutSection: 0,
+    projectsSection: 0,
+    skillsSection: 0,
+    careerSection: 0,
+  });
 
-  // Collect height of browser window to define zones of each section
-  const windowHeight = window.innerHeight;
+  // Refs for each section
+  const aboutRef = React.createRef();
+  const projectsRef = React.createRef();
+  const skillsRef = React.createRef();
+  const careerRef = React.createRef();
 
   useEffect(() => {
-    document.addEventListener("scroll", (e) => {
-      setPositionScrollY(parseInt(window.scrollY));
+    setSectionsHeight({
+      aboutSection: Math.round(aboutRef.current.offsetHeight),
+      projectsSection: Math.round(projectsRef.current.offsetHeight),
+      skillsSection: Math.round(skillsRef.current.offsetHeight),
+      careerSection: Math.round(careerRef.current.offsetHeight),
     });
+
+    document.addEventListener("scroll", (e) => {
+      setPositionScrollY(Math.round(window.scrollY) + 1);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [positionScrollY]);
 
   return language === "fr" ? (
@@ -39,17 +56,17 @@ function App() {
       <PageHeader
         data={navData.fr}
         positionScrollY={positionScrollY}
-        windowHeight={windowHeight}
         setContactModale={setContactModale}
+        sectionsHeight={sectionsHeight}
       />
 
-      {positionScrollY >= 1 ? <BtnScrollToTop /> : null}
+      {positionScrollY > 3 ? <BtnScrollToTop /> : null}
 
-      <main>
-        <SectionAbout data={aboutData.fr} />
-        <SectionProjects data={projectsData.fr} />
-        <SectionSkills data={skillsData.fr} />
-        <SectionCareer data={careerData.fr} />
+      <main id="mainContent">
+        <SectionAbout data={aboutData.fr} ref={aboutRef} />
+        <SectionProjects data={projectsData.fr} ref={projectsRef} />
+        <SectionSkills data={skillsData.fr} ref={skillsRef} />
+        <SectionCareer data={careerData.fr} ref={careerRef} />
       </main>
 
       {contactModale ? (
@@ -73,17 +90,17 @@ function App() {
       <PageHeader
         data={navData.en}
         positionScrollY={positionScrollY}
-        windowHeight={windowHeight}
         setContactModale={setContactModale}
+        sectionsHeight={sectionsHeight}
       />
 
-      {positionScrollY >= 1 ? <BtnScrollToTop /> : null}
+      {positionScrollY > 3 ? <BtnScrollToTop /> : null}
 
       <main>
-        <SectionAbout data={aboutData.en} />
-        <SectionProjects data={projectsData.en} />
-        <SectionSkills data={skillsData.en} />
-        <SectionCareer data={careerData.en} />
+        <SectionAbout data={aboutData.en} ref={aboutRef} />
+        <SectionProjects data={projectsData.en} ref={projectsRef} />
+        <SectionSkills data={skillsData.en} ref={skillsRef} />
+        <SectionCareer data={careerData.en} ref={careerRef} />
       </main>
 
       {contactModale ? (

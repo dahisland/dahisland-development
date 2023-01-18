@@ -113,7 +113,7 @@
     margin-bottom: 1rem;
     @include responsiveSmartphones {
       text-align: center;
-      min-height: 80px;
+      min-height: 95px;
     }
   }
 
@@ -171,52 +171,75 @@
     padding: 2px;
     font-size: 12px;
   }
-}
-
-.galleryCaption_tags--white-fill {
-  background-color: white;
-  border: 2px solid white;
-  color: map-get($colors, sky);
+  @include responsiveSmartphones {
+    font-size: 10px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+  }
 }
 
 .galleryCaption_tags--white {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-}
-
-.galleryCaption_tags--purple-fill {
-  background-color: lighten(darkorchid, 10%);
-  border: 2px solid lighten(darkorchid, 10%);
-  color: lighten(map-get($colors, sky), 20%);
+  background-color: map-get($colors, snow);
+  border: 2px solid map-get($colors, snow);
+  color: map-get($colors, sky);
 }
 
 .galleryCaption_tags--purple {
-  background-color: transparent;
+  background-color: lighten(darkorchid, 10%);
   border: 2px solid lighten(darkorchid, 10%);
-  color: lighten(darkorchid, 10%);
-}
-
-.galleryCaption_tags--blue-fill {
-  background-color: dodgerblue;
-  border: 2px solid dodgerblue;
-  color: map-get($colors, sky);
+  color: map-get($colors, snow);
 }
 
 .galleryCaption_tags--blue {
-  background-color: transparent;
-  border: 2px solid dodgerblue;
-  color: dodgerblue;
-}
-
-.galleryCaption_tags--gold-fill {
-  background-color: gold;
-  border: 2px solid gold;
-  color: map-get($colors, sky);
+  background-color: #0065ff;
+  border: 2px solid #0065ff;
+  color: map-get($colors, snow);
 }
 
 .galleryCaption_tags--gold {
-  background-color: transparent;
-  border: 2px solid gold;
-  color: gold;
+  background-color: orange;
+  border: 2px solid orange;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--red {
+  background-color: #e50000;
+  border: 2px solid #e50000;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--brown {
+  background-color: #901c1c;
+  border: 2px solid #901c1c;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--coral {
+  background-color: #d04f4f;
+  border: 2px solid #d04f4f;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--pink {
+  background-color: #ff6061;
+  border: 2px solid #ff6061;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--olive {
+  background-color: #86aa18;
+  border: 2px solid #86aa18;
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--green {
+  background-color: lighten(forestgreen, 10%);
+  border: 2px solid lighten(forestgreen, 10%);
+  color: map-get($colors, snow);
+}
+
+.galleryCaption_tags--black {
+  background-color: #020203;
+  border: 2px solid #020203;
+  color: map-get($colors, snow);
 }

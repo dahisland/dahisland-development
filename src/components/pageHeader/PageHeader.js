@@ -8,8 +8,8 @@ import SocialMedias from "../socialMedias/SocialMedias";
 const PageHeader = ({
   data,
   positionScrollY,
-  windowHeight,
   setContactModale,
+  sectionsHeight,
 }) => {
   return (
     <header>
@@ -33,7 +33,7 @@ const PageHeader = ({
       <Navigation
         data={data}
         positionScrollY={positionScrollY}
-        windowHeight={windowHeight}
+        sectionsHeight={sectionsHeight}
       />
 
       <div className="header_contact">
@@ -49,7 +49,6 @@ const PageHeader = ({
 PageHeader.propTypes = {
   data: PropTypes.array,
   positionScrollY: PropTypes.number,
-  windowHeight: PropTypes.number,
   setContactModale: PropTypes.func,
 };
 

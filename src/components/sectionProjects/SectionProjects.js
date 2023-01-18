@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SectionProjectsFigure from "./SectionProjectsFigure";
 
-const SectionProjects = ({ data }) => {
+const SectionProjects = React.forwardRef(({ data }, projectsRef) => {
   const [indexGallery, setIndexGallery] = useState(0);
   const [slide, setSlide] = useState(0);
   const dataGallery = data.gallery.sort(function (a, b) {
@@ -33,7 +33,7 @@ const SectionProjects = ({ data }) => {
   }
 
   return (
-    <section id="sectionProjects">
+    <section id="sectionProjects" ref={projectsRef}>
       <div className="section_content">
         <h1>{data.title}</h1>
         <div className="sectionProjects_gallery">
@@ -65,7 +65,7 @@ const SectionProjects = ({ data }) => {
       <div className="section_feature"></div>
     </section>
   );
-};
+});
 
 SectionProjects.propTypes = {
   data: PropTypes.object,

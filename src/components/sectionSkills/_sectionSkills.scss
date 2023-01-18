@@ -1,1 +1,91 @@
 @import "../../style/utils";
+
+.sectionSkills_skillsContainer {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  padding: 15px 20px;
+  border-radius: 50%;
+  gap: 4%;
+  @include responsiveTabloids {
+    gap: 2%;
+  }
+  @include responsiveSmartphones {
+    gap: 6%;
+    border-radius: 10px;
+  }
+}
+
+.skillsContainer_item {
+  width: 22%;
+  scale: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  background-color: rgba(3, 62, 75, 0.8);
+  padding: 20px;
+  transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .skillsItem_name {
+    width: 100%;
+    height: fit-content;
+    scale: 1;
+    opacity: 1;
+    transition: all 600ms ease-in-out;
+  }
+  .skillsItem_range {
+    width: 100%;
+    scale: 0;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 600ms ease-in-out;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  &:hover {
+    scale: 1.3;
+    background-color: rgba(3, 62, 75, 1);
+
+    .skillsItem_name {
+      scale: 0;
+
+      height: 0;
+      opacity: 0;
+      transition: all 600ms ease-in-out;
+    }
+    .skillsItem_range {
+      scale: 1;
+
+      height: fit-content;
+      opacity: 1;
+      transition: all 600ms ease-in-out;
+    }
+  }
+
+  @include responsiveTabloids {
+    width: 32%;
+    font-size: 16px;
+    padding: 15px 5px;
+  }
+  @include responsiveSmartphones {
+    width: 47%;
+    font-size: 14px;
+    padding: 10px 1px;
+  }
+}

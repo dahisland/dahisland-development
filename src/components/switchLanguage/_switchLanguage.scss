@@ -1,10 +1,20 @@
 @import "../../style/utils";
 
-.switch_language--fr {
+.switch_language {
   position: fixed;
   z-index: 200;
   top: 2px;
   left: 10px;
+  @include responsiveTabloids {
+    display: flex;
+    justify-content: flex-end;
+    left: inherit;
+    top: 122px;
+    right: 10px;
+  }
+}
+
+.switch_language--fr {
   width: 50px;
   height: 20px;
   border-radius: 1px;
@@ -15,9 +25,6 @@
   @include responsiveTabloids {
     width: 50px;
     height: 20px;
-    left: inherit;
-    top: 122px;
-    right: 10px;
     opacity: 1;
   }
   &:hover {
@@ -25,10 +32,6 @@
   }
 }
 .switch_language--en {
-  position: fixed;
-  z-index: 200;
-  top: 2px;
-  left: 10px;
   width: 50px;
   height: 20px;
   border-radius: 1px;
@@ -39,9 +42,6 @@
   @include responsiveTabloids {
     width: 50px;
     height: 20px;
-    left: inherit;
-    right: 10px;
-    top: 122px;
     opacity: 1;
   }
   &:hover {

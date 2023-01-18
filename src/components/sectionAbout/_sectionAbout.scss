@@ -15,39 +15,98 @@
     transform: translate(0, 0) rotateZ(50deg);
   }
   20% {
-    transform: translate(300px, -250px) rotateZ(45deg);
+    transform: translate(200px, -250px) rotateZ(45deg);
     background-image: url("../../assets/ladybird.png");
   }
   21% {
-    transform: translate(300px, -250px) rotateZ(45deg);
+    transform: translate(200px, -250px) rotateZ(45deg);
     background-image: url("../../assets/ladybird-fly.png");
   }
   22% {
-    transform: translate(300px, -250px) rotateZ(45deg);
+    transform: translate(200px, -250px) rotateZ(45deg);
     background-image: url("../../assets/ladybird.png");
   }
   23% {
-    transform: translate(300px, -250px) rotateZ(45deg);
+    transform: translate(200px, -250px) rotateZ(45deg);
     background-image: url("../../assets/ladybird-fly.png");
   }
   24% {
-    transform: translate(300px, -250px) rotateZ(45deg);
+    transform: translate(200px, -250px) rotateZ(45deg);
     background-image: url("../../assets/ladybird.png");
   }
   28% {
-    transform: translate(350px, -350px) rotateZ(10deg);
+    transform: translate(250px, -350px) rotateZ(10deg);
   }
   30% {
-    transform: translate(350px, -350px) rotateZ(-50deg);
+    transform: translate(250px, -350px) rotateZ(-50deg);
   }
   33% {
-    transform: translate(350px, -350px) rotateZ(-150deg);
+    transform: translate(250px, -350px) rotateZ(-150deg);
   }
   70% {
     transform: translate(0, 0) rotateZ(-180deg);
   }
   100% {
     transform: translate(0, 0) rotateZ(10deg);
+  }
+}
+
+@keyframes ladybird-anim2 {
+  0% {
+    transform: rotateZ(10deg);
+    left: 5px;
+    top: 50%;
+    background-image: url("../../assets/ladybird.png");
+  }
+  2% {
+    transform: rotateZ(50deg);
+    left: 5px;
+    top: 50%;
+  }
+  20% {
+    transform: rotateZ(45deg);
+    left: 50%;
+    top: 20%;
+    background-image: url("../../assets/ladybird.png");
+  }
+  21% {
+    transform: rotateZ(45deg);
+    left: 50%;
+    top: 20%;
+    background-image: url("../../assets/ladybird-fly.png");
+  }
+  22% {
+    transform: rotateZ(45deg);
+    left: 50%;
+    top: 20%;
+    background-image: url("../../assets/ladybird.png");
+  }
+  23% {
+    transform: rotateZ(45deg);
+    left: 50%;
+    top: 20%;
+    background-image: url("../../assets/ladybird-fly.png");
+  }
+  24% {
+    transform: rotateZ(45deg);
+    left: 50%;
+    top: 20%;
+    background-image: url("../../assets/ladybird.png");
+  }
+  28% {
+    transform: rotateZ(10deg);
+  }
+  30% {
+    transform: rotateZ(-50deg);
+  }
+  33% {
+    transform: rotateZ(-150deg);
+  }
+  70% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
   }
 }
 
@@ -59,9 +118,9 @@
   background-size: contain;
   position: absolute;
   z-index: 110;
-  bottom: 50%;
-  left: -35px;
-  animation: ladybird-anim 40s infinite ease-in-out;
+  top: 50%;
+  left: 5px;
+  animation: ladybird-anim2 40s infinite ease-in-out;
   img {
     width: 30px;
   }

@@ -9,6 +9,9 @@ const SectionAbout = React.forwardRef(({ data }, aboutRef) => {
 
       <div className="section_feature"></div>
       {/* <div className="ladybird_container"></div> */}
+      {/* <div className="ladybird_animation">
+        <div className="ladybird"></div>
+      </div> */}
     </section>
   );
 });

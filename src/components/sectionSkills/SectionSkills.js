@@ -7,7 +7,6 @@ import {
   SiJavascript,
   SiReact,
   SiFigma,
-  SiNodedotjs,
   SiJest,
   SiRedux,
   SiLighthouse,
@@ -16,6 +15,7 @@ import {
   SiGithub,
   SiAdobeaftereffects,
   SiAdobepremierepro,
+  SiFramer,
 } from "react-icons/si";
 import { IoLogoNpm } from "react-icons/io";
 import { RiStarSFill, RiStarSLine, RiStarHalfSFill } from "react-icons/ri";
@@ -29,7 +29,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     { link: SiJavascript, id: "js", color: "#fed73c" },
     { link: SiReact, id: "react", color: "#00d8ff" },
     { link: SiFigma, id: "figma", color: "#ff7261" },
-    { link: SiNodedotjs, id: "node", color: "#91c640" },
+    { link: SiFramer, id: "framer", color: "white" },
     { link: IoLogoNpm, id: "npm", color: "#cd3939" },
     { link: SiJest, id: "jest", color: "white" },
     { link: SiRedux, id: "redux", color: "#ab77ff" },

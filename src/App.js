@@ -36,6 +36,12 @@ function App() {
   const careerRef = React.createRef();
 
   useEffect(() => {
+    setPositionScrollY(Math.round(window.scrollY) + 1);
+
+    document.addEventListener("scroll", (e) => {
+      setPositionScrollY(Math.round(window.scrollY) + 1);
+    });
+
     setSectionsHeight({
       aboutSection: Math.round(aboutRef.current.offsetHeight),
       projectsSection: Math.round(projectsRef.current.offsetHeight),
@@ -43,9 +49,6 @@ function App() {
       careerSection: Math.round(careerRef.current.offsetHeight),
     });
 
-    document.addEventListener("scroll", (e) => {
-      setPositionScrollY(Math.round(window.scrollY) + 1);
-    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [positionScrollY]);
 

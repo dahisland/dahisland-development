@@ -17,6 +17,7 @@ export const skillsData = {
       { name: "Git & Github", id: "git", level: 3 },
       { name: "After Effect", id: "ae", level: 3 },
       { name: "Première Pro", id: "premiere", level: 3 },
+      { name: "VS Code", id: "vscode", level: 3 },
     ],
   },
   en: {
@@ -37,6 +38,7 @@ export const skillsData = {
       { name: "Git & Github", id: "git", level: 3 },
       { name: "After Effect", id: "ae", level: 3 },
       { name: "Première Pro", id: "premiere", level: 3 },
+      { name: "VS Code", id: "vscode", level: 3 },
     ],
   },
 };

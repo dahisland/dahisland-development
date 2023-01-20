@@ -18,11 +18,9 @@ header {
   opacity: 0.9;
   @include responsiveTabloids {
     width: 100%;
-    // max-width: 100vw !important;
     height: fit-content;
     bottom: inherit;
     left: 0;
-    // right: inherit;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,7 +82,7 @@ header {
     @include responsiveTabloids {
       flex-direction: row;
       justify-content: flex-start;
-      gap: 15px;
+      gap: 6px;
       width: 50%;
     }
   }

@@ -16,6 +16,7 @@ import {
   SiAdobeaftereffects,
   SiAdobepremierepro,
   SiFramer,
+  SiVisualstudio,
 } from "react-icons/si";
 import { IoLogoNpm } from "react-icons/io";
 import { RiStarSFill, RiStarSLine, RiStarHalfSFill } from "react-icons/ri";
@@ -39,6 +40,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     { link: SiGithub, id: "git", color: "white" },
     { link: SiAdobeaftereffects, id: "ae", color: "#9998fe" },
     { link: SiAdobepremierepro, id: "premiere", color: "#dc56fd" },
+    { link: SiVisualstudio, id: "vscode", color: "#2d9eea" },
   ];
 
   function iconFiltered(item) {

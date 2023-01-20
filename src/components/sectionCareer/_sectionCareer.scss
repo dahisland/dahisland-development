@@ -1,12 +1,85 @@
 @import "../../style/utils";
 
-.sectionCareer_elements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes ladybird-fly {
+  0% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  20% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  22% {
+    background-image: url("../../assets/ladybird-fly-opacity.png");
+  }
+  24% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  26% {
+    background-image: url("../../assets/ladybird-fly-opacity.png");
+  }
+  28% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  30% {
+    background-image: url("../../assets/ladybird-fly-opacity.png");
+  }
+  32% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  //
+  65% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  70% {
+    background-image: url("../../assets/ladybird-fly-opacity.png");
+  }
+  75% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  80% {
+    background-image: url("../../assets/ladybird-fly-opacity.png");
+  }
+  85% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
+  100% {
+    background-image: url("../../assets/ladybird-opacity.png");
+  }
 }
 
-.sectionCareerElements_motionPath {
+.sectionCareer_elements {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include responsiveSmartphones {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .sectionCareerElements_jobs {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../../assets/ladybird-opacity.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    animation: ladybird-fly 6000ms infinite ease-in-out;
+  }
+  .sectionCareerElements_pastWork {
+    width: 60%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    @include responsiveTabloids {
+      width: 50%;
+    }
+    @include responsiveSmartphones {
+      width: 100%;
+    }
+  }
+}
+
+.elementsJobs_motionPath {
   position: relative;
   width: 100%;
   max-width: 200px;
@@ -14,21 +87,44 @@
   margin-top: 2rem;
 }
 
-.sectionCareer_motionDiv {
-  text-align: center;
-  padding: 6px 15px;
-  width: fit-content;
-  border-radius: 5px;
+.elementsJobs_motionDiv {
+  cursor: pointer;
   position: absolute;
   top: 0;
-  rotate: 0deg;
-  font-size: 14px;
-  transition: rotate 500ms ease-in-out;
+  left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
   offset-path: path(
     "M 81.105 14.599 C 135.716 34.064 31.361 52.448 71.913 94.082 C 173.566 193.572 58.937 202.764 46.5 242.775 C 35.146 284.41 81.646 302.253 77.32 320.637"
   );
   offset-rotate: 0deg;
+
+  &::after {
+    position: absolute;
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    bottom: -1px;
+    left: -55px;
+    content: "";
+  }
+
   &:hover {
-    rotate: -15deg;
+    box-shadow: inherit;
+    &::after {
+      box-shadow: 0px 0px 5px white inset;
+      background-color: rgba(3, 62, 75, 0.9);
+      content: attr(data-descr);
+    }
   }
 }

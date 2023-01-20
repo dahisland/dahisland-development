@@ -3,7 +3,7 @@ export const navData = {
     {
       position: 1,
       id: "navLink_about",
-      name: "Présentations",
+      name: "Qui suis-je",
       linkTo: "sectionAbout",
     },
     {
@@ -21,7 +21,7 @@ export const navData = {
     {
       position: 4,
       id: "navLink_career",
-      name: "Parcours",
+      name: "Parcours pro",
       linkTo: "sectionCareer",
     },
   ],
@@ -29,7 +29,7 @@ export const navData = {
     {
       position: 1,
       id: "navLink_about",
-      name: "Presentations",
+      name: "About me",
       linkTo: "sectionAbout",
     },
     {

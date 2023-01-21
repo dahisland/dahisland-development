@@ -1,17 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionAboutContent from "./SectionAboutContent";
+import Features from "../features/Features";
 
 const SectionAbout = React.forwardRef(({ data }, aboutRef) => {
   return (
     <section id="sectionAbout" ref={aboutRef}>
       <SectionAboutContent data={data} />
-
-      <div className="section_feature"></div>
-      {/* <div className="ladybird_container"></div> */}
-      {/* <div className="ladybird_animation">
-        <div className="ladybird"></div>
-      </div> */}
+      <Features />
     </section>
   );
 });

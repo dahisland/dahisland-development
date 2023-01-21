@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import Features from "../features/Features";
+import { skillContainer, skillItem } from "./sectionSkills.variants";
 import {
   SiHtml5,
   SiCss3,
@@ -48,32 +50,6 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     const Icon = iconSelected.link;
     return <Icon style={{ color: iconSelected.color }} size="36px" />;
   }
-
-  const skillContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        ease: "easeIn",
-        duration: 0.6,
-        delayChildren: 0.2,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const skillItem = {
-    hidden: { y: 50, opacity: 0, rotate: 20, scale: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      rotate: 0,
-      scale: 1,
-      transition: {
-        ease: "easeIn",
-      },
-    },
-  };
 
   return (
     <section id="sectionSkills" ref={skillsRef}>
@@ -123,7 +99,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
           ))}
         </motion.ul>
       </div>
-      <div className="section_feature"></div>
+      <Features />
     </section>
   );
 });

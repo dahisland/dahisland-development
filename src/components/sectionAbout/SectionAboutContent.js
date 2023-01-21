@@ -5,9 +5,14 @@ const SectionAboutContent = ({ data }) => {
   return (
     <div className="section_content">
       <h1>{data.title}</h1>
-      {data.content.map((item, index) => (
-        <p key={data.key + index}>{item}</p>
-      ))}
+      <div className="sectionAbout_presentation">
+        <div className="sectionAboutPresentation_txt">
+          {data.content.map((item, index) => (
+            <p key={data.key + index}>{item}</p>
+          ))}
+        </div>
+        <div className="sectionAboutPresentation_img"></div>
+      </div>
     </div>
   );
 };

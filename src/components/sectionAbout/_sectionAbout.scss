@@ -6,143 +6,30 @@
   }
 }
 
-@keyframes ladybird-anim {
-  0% {
-    transform: translate(0, 0) rotateZ(10deg);
-    background-image: url("../../assets/ladybird.png");
-  }
-  2% {
-    transform: translate(0, 0) rotateZ(50deg);
-  }
-  20% {
-    transform: translate(-200px, -250px) rotateZ(45deg);
-    background-image: url("../../assets/ladybird.png");
-  }
-  21% {
-    transform: translate(-200px, -250px) rotateZ(45deg);
-    background-image: url("../../assets/ladybird-fly.png");
-  }
-  22% {
-    transform: translate(-200px, -250px) rotateZ(45deg);
-    background-image: url("../../assets/ladybird.png");
-  }
-  23% {
-    transform: translate(-200px, -250px) rotateZ(45deg);
-    background-image: url("../../assets/ladybird-fly.png");
-  }
-  24% {
-    transform: translate(-200px, -250px) rotateZ(45deg);
-    background-image: url("../../assets/ladybird.png");
-  }
-  28% {
-    transform: translate(-250px, -350px) rotateZ(10deg);
-  }
-  30% {
-    transform: translate(-250px, -350px) rotateZ(-50deg);
-  }
-  33% {
-    transform: translate(-250px, -350px) rotateZ(-150deg);
-  }
-  70% {
-    transform: translate(0, 0) rotateZ(-180deg);
-  }
-  100% {
-    transform: translate(0, 0) rotateZ(10deg);
+.sectionAbout_presentation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  @include responsiveTabloids {
+    flex-direction: column;
   }
 }
 
-.ladybird_container {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  background-image: url("../../assets/ladybird.png");
-  background-size: contain;
-  position: absolute;
-  z-index: 110;
-  top: 50%;
-  left: 5px;
-  animation: ladybird-anim 40s infinite linear;
-  img {
-    width: 30px;
+.sectionAboutPresentation_txt {
+  width: 50%;
+  @include responsiveTabloids {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
-//
-
-@keyframes ladybird-anim2 {
-  0% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(50%, -10%) rotate(45deg);
+.sectionAboutPresentation_img {
+  width: 36%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 18px;
+  @include responsiveTabloids {
+    width: 100%;
+    margin: 0;
   }
-  2% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(50%, -10%) rotate(45deg);
-  }
-  20% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  21% {
-    background-image: url("../../assets/ladybird-fly.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  22% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  23% {
-    background-image: url("../../assets/ladybird-fly.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  24% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  35% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  36% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  37% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  55% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  70% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(20%, 30%) rotate(65deg);
-  }
-  100% {
-    background-image: url("../../assets/ladybird.png");
-    transform: translate(50%, -10%) rotate(45deg);
-  }
-}
-
-.ladybird_animation {
-  position: absolute;
-  z-index: 110;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.ladybird {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 1%;
-  background-image: url("../../assets/ladybird.png");
-  background-size: contain;
-  transform: translate(0, 0) rotateZ(10deg);
-  transition: background-image 400ms ease-in-out;
-  animation: ladybird-anim 40s infinite ease-in-out;
 }

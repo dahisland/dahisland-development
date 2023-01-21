@@ -6,6 +6,7 @@ import {
   faCaretSquareLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import SectionProjectsFigure from "./SectionProjectsFigure";
+import Features from "../features/Features";
 
 const SectionProjects = React.forwardRef(({ data }, projectsRef) => {
   const [indexGallery, setIndexGallery] = useState(0);
@@ -62,7 +63,7 @@ const SectionProjects = React.forwardRef(({ data }, projectsRef) => {
         </div>
       </div>
 
-      <div className="section_feature"></div>
+      <Features />
     </section>
   );
 });

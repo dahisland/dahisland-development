@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionCareerJobs from "./SectionCareerJobs";
+import Features from "../features/Features";
 
 const SectionCareer = React.forwardRef(({ data }, careerRef) => {
   return (
@@ -12,7 +13,7 @@ const SectionCareer = React.forwardRef(({ data }, careerRef) => {
           <div className="sectionCareerElements_pastWork"></div>
         </div>
       </div>
-      <div className="section_feature"></div>
+      <Features />
     </section>
   );
 });

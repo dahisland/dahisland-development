@@ -76,19 +76,19 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
                     level <= item.level ? (
                       <RiStarSFill
                         size="18px"
-                        style={{ color: "#09d6dd" }}
+                        style={{ color: "#0EBBF1" }}
                         key={item.name + "range" + level}
                       />
                     ) : level - 1 < item.level ? (
                       <RiStarHalfSFill
                         size="18px"
-                        style={{ color: "#09d6dd" }}
+                        style={{ color: "#0EBBF1" }}
                         key={item.name + "range" + level}
                       />
                     ) : (
                       <RiStarSLine
                         size="18px"
-                        style={{ color: "#09d6dd" }}
+                        style={{ color: "#0EBBF1" }}
                         key={item.name + "range" + level}
                       />
                     )

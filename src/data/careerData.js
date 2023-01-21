@@ -269,7 +269,7 @@ export const careerData = {
     title: "Career",
     jobs: [
       {
-        name: "Front-end developper",
+        name: "Front-end developer",
         iconId: "dev",
         variant: {
           hidden: {

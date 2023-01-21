@@ -61,3 +61,36 @@ $weights: (
     @content;
   }
 }
+
+@mixin bigBubbles {
+  width: 19vmin;
+  height: 19vmin;
+  box-shadow: 0px 0px 10vmin rgba(3, 62, 75, 0.5);
+}
+
+@mixin mediumBubbles {
+  width: 12vmin;
+  height: 12vmin;
+  box-shadow: 0px 0px 4vmin rgba(3, 62, 75, 0.5);
+}
+
+@mixin smallBubbles {
+  width: 9vmin;
+  height: 9vmin;
+  box-shadow: 0px 0px 3vmin rgba(3, 62, 75, 0.5);
+}
+
+@mixin ladybirdBubbles {
+  width: 7vmin;
+  height: 7vmin;
+  background-image: url("../assets/ladybird.png");
+  background-size: contain;
+  @include responsiveTabloids() {
+    width: 8vmin;
+    height: 8vmin;
+  }
+  @include responsiveSmartphones() {
+    width: 10vmin;
+    height: 10vmin;
+  }
+}

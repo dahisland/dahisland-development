@@ -1,0 +1,295 @@
+@import "../../style/utils";
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.backgroundAnim_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: map-get($colors, gradient);
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble {
+  border-radius: 19vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 25;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.backgroundAnim_bubble:nth-child(0) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 99%;
+  left: 84%;
+  animation-duration: 55s;
+  animation-delay: -18s;
+  transform-origin: -3vw -11vh;
+}
+
+.backgroundAnim_bubble:nth-child(1) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 44%;
+  left: 21%;
+  animation-duration: 29s;
+  animation-delay: -15s;
+  transform-origin: -14vw 11vh;
+}
+
+.backgroundAnim_bubble:nth-child(2) {
+  color: #033e4b;
+  @include smallBubbles;
+  top: 62%;
+  left: 97%;
+  animation-duration: 12s;
+  animation-delay: -39s;
+  transform-origin: -24vw 15vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(3) {
+  color: #033e4b;
+  @include ladybirdBubbles;
+  top: 48%;
+  left: 69%;
+  animation-duration: 21s;
+  animation-delay: -36s;
+  transform-origin: 10vw 10vh;
+}
+
+.backgroundAnim_bubble:nth-child(4) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 84%;
+  left: 64%;
+  animation-duration: 31s;
+  animation-delay: -38s;
+  transform-origin: 8vw -7vh;
+}
+
+.backgroundAnim_bubble:nth-child(5) {
+  color: #033e4b;
+  @include smallBubbles;
+  top: 38%;
+  left: 58%;
+  animation-duration: 14s;
+  animation-delay: -27s;
+  transform-origin: -18vw 23vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(6) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 67%;
+  left: 11%;
+  animation-duration: 18s;
+  animation-delay: -8s;
+  transform-origin: 23vw -21vh;
+}
+
+.backgroundAnim_bubble:nth-child(7) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 94%;
+  left: 57%;
+  animation-duration: 33s;
+  animation-delay: -32s;
+  transform-origin: -14vw 22vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(8) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 47%;
+  left: 77%;
+  animation-duration: 18s;
+  animation-delay: -45s;
+  transform-origin: -3vw -1vh;
+}
+
+.backgroundAnim_bubble:nth-child(9) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 17%;
+  left: 6%;
+  animation-duration: 45s;
+  animation-delay: -16s;
+  transform-origin: 14vw 10vh;
+}
+
+.backgroundAnim_bubble:nth-child(10) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 97%;
+  left: 69%;
+  animation-duration: 7s;
+  animation-delay: -12s;
+  transform-origin: 12vw 8vh;
+}
+
+.backgroundAnim_bubble:nth-child(11) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 62%;
+  left: 62%;
+  animation-duration: 27s;
+  animation-delay: -11s;
+  transform-origin: -2vw 2vh;
+}
+
+.backgroundAnim_bubble:nth-child(12) {
+  color: #033e4b;
+  @include ladybirdBubbles;
+  top: 21%;
+  left: 18%;
+  animation-duration: 40s;
+  animation-delay: -3s;
+  transform-origin: 19vw 8vh;
+}
+
+.backgroundAnim_bubble:nth-child(13) {
+  color: #033e4b;
+  @include smallBubbles;
+  top: 7%;
+  left: 64%;
+  animation-duration: 47s;
+  animation-delay: -31s;
+  transform-origin: 25vw -8vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(14) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 52%;
+  left: 32%;
+  animation-duration: 17s;
+  animation-delay: -47s;
+  transform-origin: -18vw -17vh;
+}
+
+.backgroundAnim_bubble:nth-child(15) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 81%;
+  left: 71%;
+  animation-duration: 41s;
+  animation-delay: -27s;
+  transform-origin: 16vw -5vh;
+}
+
+.backgroundAnim_bubble:nth-child(16) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 57%;
+  left: 21%;
+  animation-duration: 20s;
+  animation-delay: -19s;
+  transform-origin: 5vw 19vh;
+}
+
+.backgroundAnim_bubble:nth-child(17) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 40%;
+  left: 32%;
+  animation-duration: 37s;
+  animation-delay: -49s;
+  transform-origin: -10vw 1vh;
+}
+
+.backgroundAnim_bubble:nth-child(18) {
+  color: #033e4b;
+  @include smallBubbles;
+  top: 60%;
+  left: 56%;
+  animation-duration: 47s;
+  animation-delay: -46s;
+  transform-origin: 8vw -17vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(19) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 100%;
+  left: 19%;
+  animation-duration: 54s;
+  animation-delay: -42s;
+  transform-origin: -18vw -23vh;
+}
+
+.backgroundAnim_bubble:nth-child(20) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 35%;
+  left: 92%;
+  animation-duration: 29s;
+  animation-delay: -30s;
+  transform-origin: -11vw -6vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(21) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 67%;
+  left: 81%;
+  animation-duration: 46s;
+  animation-delay: -22s;
+  transform-origin: 15vw -8vh;
+}
+
+.backgroundAnim_bubble:nth-child(22) {
+  color: #033e4b;
+  @include smallBubbles;
+  top: 43%;
+  left: 79%;
+  animation-duration: 34s;
+  animation-delay: -2s;
+  transform-origin: 18vw 19vh;
+}
+
+.backgroundAnim_bubble:nth-child(23) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 15%;
+  left: 49%;
+  animation-duration: 39s;
+  animation-delay: -9s;
+  transform-origin: 10vw 3vh;
+}
+
+.backgroundAnim_bubble:nth-child(24) {
+  color: #033e4b;
+  @include bigBubbles;
+  top: 94%;
+  left: 42%;
+  animation-duration: 14s;
+  animation-delay: -26s;
+  transform-origin: 1vw 17vh;
+  opacity: 0.6;
+}
+
+.backgroundAnim_bubble:nth-child(25) {
+  color: #033e4b;
+  @include mediumBubbles;
+  top: 8%;
+  left: 7%;
+  animation-duration: 25s;
+  animation-delay: -14s;
+  transform-origin: 15vw 3vh;
+}

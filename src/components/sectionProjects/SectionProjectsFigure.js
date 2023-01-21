@@ -16,7 +16,11 @@ const SectionProjectsFigure = ({
     >
       <picture className="projectsGallery_picture">
         <img
-          src={process.env.PUBLIC_URL + "/img/" + dataGallery[indexGallery].url}
+          src={
+            process.env.PUBLIC_URL +
+            "/img/projects/" +
+            dataGallery[indexGallery].url
+          }
           alt={dataGallery[indexGallery].name}
         />
       </picture>

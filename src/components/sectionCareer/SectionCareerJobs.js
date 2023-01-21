@@ -74,6 +74,8 @@ const SectionCareerJobs = ({ data }) => {
             whileInView="visible"
             whileHover="hover"
             data-descr={item.name}
+            drag
+            dragSnapToOrigin
           >
             {iconFiltered(item)}
           </motion.div>

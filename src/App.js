@@ -16,6 +16,7 @@ import { careerData } from "./data/careerData";
 import { skillsData } from "./data/skillsData";
 import { ModaleFullscreen } from "modale-fullscreen-customizable";
 import { contactFormData } from "./data/contactFormData";
+import BackgroundAnim from "./components/backgroundAnim/BackgroundAnim";
 
 function App() {
   const [language, setLanguage] = useState("fr");
@@ -66,6 +67,7 @@ function App() {
       {positionScrollY > 3 ? <BtnScrollToTop /> : null}
 
       <main id="mainContent">
+        <BackgroundAnim />
         <SectionAbout data={aboutData.fr} ref={aboutRef} />
         <SectionProjects data={projectsData.fr} ref={projectsRef} />
         <SectionSkills data={skillsData.fr} ref={skillsRef} />

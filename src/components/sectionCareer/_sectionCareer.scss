@@ -58,18 +58,18 @@
   }
 
   .sectionCareerElements_jobs {
-    background-color: rgba(255, 255, 255, 0.5);
-    background-image: url("../../assets/ladybird-opacity.png");
+    background-image: url("../../assets/leaf-opacity.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    animation: ladybird-fly 6000ms infinite ease-in-out;
+    // animation: ladybird-fly 6000ms infinite ease-in-out;
   }
   .sectionCareerElements_pastWork {
     width: 60%;
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(3, 62, 75, 0.8);
+    border-radius: 5px;
     @include responsiveTabloids {
       width: 50%;
     }

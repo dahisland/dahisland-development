@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import Features from "../features/Features";
 import { skillContainer, skillItem } from "./sectionSkills.variants";
 import {
   SiHtml5,
@@ -99,7 +98,6 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
           ))}
         </motion.ul>
       </div>
-      {/* <Features /> */}
     </section>
   );
 });

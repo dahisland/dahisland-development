@@ -79,9 +79,11 @@ const ContactForm = ({ contactFormData }) => {
         <br />
         <span>{messageOnSubmit[1]}</span>
       </p>
-      <button onClick={() => setSubmitted(false)}>
-        {contactFormData.previousBtn}
-      </button>
+      <div className="contactForm_buttons">
+        <button onClick={() => setSubmitted(false)}>
+          {contactFormData.previousBtn}
+        </button>
+      </div>
     </div>
   );
 };

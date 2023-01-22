@@ -60,7 +60,7 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
                   name={item.name}
                   value={item.radio[0].value}
                   {...register(item.name, {
-                    required: "This field is required",
+                    required: quizzFormData.required,
                   })}
                 />
               </div>

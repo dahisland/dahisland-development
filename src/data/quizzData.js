@@ -88,6 +88,7 @@ export const quizzData = {
       "Créer un service backend pour une application mobile en Java et Kotlin",
       "Comptable",
     ],
+    required: "Sélectionnez une réponse",
     result: {
       buttons: {
         retry: "Rejouer",
@@ -193,6 +194,7 @@ export const quizzData = {
       "Create a backend service for a mobile application in Java and Kotlin",
       "Accountant",
     ],
+    required: "Select an answer",
     result: {
       buttons: {
         retry: "Play again",

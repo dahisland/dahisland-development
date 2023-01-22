@@ -1,0 +1,122 @@
+@import "../../style/utils";
+
+.quizz_form {
+  color: map-get($colors, night);
+  padding: 2rem 0rem 0rem 0rem;
+  .quizzForm_intro {
+    margin-bottom: 2rem;
+    p {
+      color: map-get($colors, night);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.quizzForm_block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: 2px solid map-get($colors, grass);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+
+  .quizzFormBlock_question {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: map-get($colors, night);
+  }
+
+  .quizzFormBlock_propositions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .propositions_radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    margin: 0;
+    margin-right: 5px;
+    color: map-get($colors, night);
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+    color: map-get($colors, night);
+  }
+}
+
+.quizzForm_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+#input-quizz-submit {
+  color: map-get($colors, snow);
+  background-color: map-get($colors, grass);
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+    box-shadow: 2px 3px 5px lightgrey;
+  }
+}
+
+.input-error-message {
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  font-style: italic;
+  color: map-get($colors, blood);
+}
+
+.quizzForm_submitted {
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+
+  .quizzForm_score--success {
+    background-color: map-get($colors, grass);
+    color: map-get($colors, snow);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .quizzForm_score--fail {
+    background-color: map-get($colors, blood);
+    color: map-get($colors, snow);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: map-get($colors, night);
+    margin-bottom: 1rem;
+  }
+
+  button {
+    color: map-get($colors, snow);
+    background-color: map-get($colors, grass);
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+      box-shadow: 2px 3px 5px lightgrey;
+    }
+  }
+}

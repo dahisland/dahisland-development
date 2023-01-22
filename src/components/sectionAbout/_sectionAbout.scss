@@ -7,10 +7,11 @@
 }
 
 .sectionAbout_presentation {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   @include responsiveTabloids {
+    margin-top: 2rem;
     flex-direction: column;
   }
 }

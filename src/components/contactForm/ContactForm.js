@@ -62,7 +62,9 @@ const ContactForm = ({ contactFormData }) => {
           maxLength={contactFormData.textarea.maxlength}
         ></textarea>
       </div>
-      <input type="submit" value="Submit" id="input-submit" />
+      <div className="contactForm_buttons">
+        <input type="submit" value={contactFormData.submit} id="input-submit" />
+      </div>
     </form>
   ) : (
     <div

@@ -99,7 +99,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
           ))}
         </motion.ul>
       </div>
-      <Features />
+      {/* <Features /> */}
     </section>
   );
 });

@@ -13,7 +13,7 @@ const SectionCareer = React.forwardRef(({ data }, careerRef) => {
           <div className="sectionCareerElements_pastWork"></div>
         </div>
       </div>
-      <Features />
+      {/* <Features /> */}
     </section>
   );
 });

@@ -9,6 +9,7 @@ import SwitchLanguage from "./components/switchLanguage/SwitchLanguage";
 import SectionCareer from "./components/sectionCareer/SectionCareer";
 import BtnScrollToTop from "./components/btnScrollToTop/BtnScrollToTop";
 import ContactForm from "./components/contactForm/ContactForm";
+import QuizzForm from "./components/quizzForm/QuizzForm";
 import { navData } from "./data/headerData";
 import { aboutData } from "./data/aboutData";
 import { projectsData } from "./data/projectsData";
@@ -16,12 +17,15 @@ import { careerData } from "./data/careerData";
 import { skillsData } from "./data/skillsData";
 import { ModaleFullscreen } from "modale-fullscreen-customizable";
 import { contactFormData } from "./data/contactFormData";
+import { quizzData } from "./data/quizzData";
 import BackgroundAnim from "./components/backgroundAnim/BackgroundAnim";
+import LadybirdAnim from "./components/ladybirdAnim/LadybirdAnim";
 
 function App() {
   const [language, setLanguage] = useState("fr");
   const [positionScrollY, setPositionScrollY] = useState(1);
   const [contactModale, setContactModale] = useState(false);
+  const [quizzModale, setQuizzModale] = useState(false);
   // State all sections heights
   const [sectionsHeight, setSectionsHeight] = useState({
     aboutSection: 0,
@@ -72,6 +76,7 @@ function App() {
         <SectionProjects data={projectsData.fr} ref={projectsRef} />
         <SectionSkills data={skillsData.fr} ref={skillsRef} />
         <SectionCareer data={careerData.fr} ref={careerRef} />
+        <LadybirdAnim data="Clique-moi !" setQuizzModale={setQuizzModale} />
       </main>
 
       {contactModale ? (
@@ -85,6 +90,26 @@ function App() {
           idModaleTitle="contactModale_title"
           idModaleContent="contactModale_content"
           idModaleIcon="contactModale_icon"
+        />
+      ) : null}
+
+      {quizzModale ? (
+        <ModaleFullscreen
+          eventOnClickIcon={() => setQuizzModale(false)}
+          modaleContent={
+            <QuizzForm
+              quizzFormData={quizzData.fr}
+              setQuizzModale={setQuizzModale}
+              setContactModale={setContactModale}
+            />
+          }
+          modaleTitle={"ON JOUE ?"}
+          modaleIcon={<FontAwesomeIcon icon={faTimesCircle} />}
+          idInnerContainer="quizzModale_innerContainer"
+          idModaleHeader="quizzModale_header"
+          idModaleTitle="quizzModale_title"
+          idModaleContent="quizzModale_content"
+          idModaleIcon="quizzModale_icon"
         />
       ) : null}
     </div>
@@ -102,10 +127,12 @@ function App() {
       {positionScrollY > 3 ? <BtnScrollToTop /> : null}
 
       <main>
+        <BackgroundAnim />
         <SectionAbout data={aboutData.en} ref={aboutRef} />
         <SectionProjects data={projectsData.en} ref={projectsRef} />
         <SectionSkills data={skillsData.en} ref={skillsRef} />
         <SectionCareer data={careerData.en} ref={careerRef} />
+        <LadybirdAnim data="Clic me !" setQuizzModale={setQuizzModale} />
       </main>
 
       {contactModale ? (
@@ -119,6 +146,26 @@ function App() {
           idModaleTitle="contactModale_title"
           idModaleContent="contactModale_content"
           idModaleIcon="contactModale_icon"
+        />
+      ) : null}
+
+      {quizzModale ? (
+        <ModaleFullscreen
+          eventOnClickIcon={() => setQuizzModale(false)}
+          modaleContent={
+            <QuizzForm
+              quizzFormData={quizzData.en}
+              setQuizzModale={setQuizzModale}
+              setContactModale={setContactModale}
+            />
+          }
+          modaleTitle={"Let's play ?"}
+          modaleIcon={<FontAwesomeIcon icon={faTimesCircle} />}
+          idInnerContainer="quizzModale_innerContainer"
+          idModaleHeader="quizzModale_header"
+          idModaleTitle="quizzModale_title"
+          idModaleContent="quizzModale_content"
+          idModaleIcon="quizzModale_icon"
         />
       ) : null}
     </div>

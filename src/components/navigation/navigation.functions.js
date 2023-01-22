@@ -1,7 +1,5 @@
 export function toggleActiveClass(item, positionScrollY, sectionsHeight) {
   let classLink = "navLink";
-  console.log(positionScrollY);
-  console.log(sectionsHeight);
 
   switch (item) {
     case "sectionAbout":

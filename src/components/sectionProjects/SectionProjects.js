@@ -63,7 +63,7 @@ const SectionProjects = React.forwardRef(({ data }, projectsRef) => {
         </div>
       </div>
 
-      <Features />
+      {/* <Features /> */}
     </section>
   );
 });

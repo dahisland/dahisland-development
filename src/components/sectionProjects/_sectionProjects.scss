@@ -19,14 +19,17 @@
 }
 
 .sectionProjects_gallery {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @include responsiveTabloids {
+    margin-top: 3rem;
+  }
   @include responsiveSmartphones {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .projectsGallery_container {

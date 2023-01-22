@@ -47,10 +47,13 @@
 }
 
 .sectionCareer_elements {
-  padding-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include responsiveTabloids {
+    margin-top: 3rem;
+  }
   @include responsiveSmartphones {
     flex-direction: column;
     justify-content: center;

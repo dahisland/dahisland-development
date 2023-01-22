@@ -53,6 +53,12 @@
   }
 }
 
+.contactForm_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
 #input-submit {
   color: map-get($colors, snow);
   background-color: map-get($colors, sky);

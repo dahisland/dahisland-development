@@ -1,9 +1,13 @@
 @import "./utils";
 
-#contactModale_innerContainer {
+#quizzModale_innerContainer {
   width: 50%;
   padding: 3rem;
   overflow-y: auto;
+  background-image: url("../assets/ladybird-fly-opacity.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   @include responsiveTabloids {
     width: 80%;
   }
@@ -13,7 +17,7 @@
   }
 }
 
-#contactModale_header {
+#quizzModale_header {
   left: 3.3rem;
   right: 3.5rem;
   top: 1rem;
@@ -23,19 +27,19 @@
   }
 }
 
-#contactModale_title {
+#quizzModale_title {
   font-size: map-get($sizes, xl);
-  color: map-get($colors, sky);
+  color: map-get($colors, grass);
   @include responsiveSmartphones {
     font-size: 20px;
   }
 }
 
-#contactModale_content {
+#quizzModale_content {
   text-align: left;
 }
 
-@keyframes anim-contactIcon {
+@keyframes anim-quizzIcon {
   from {
     transform: rotate(45deg);
   }
@@ -44,18 +48,18 @@
   }
 }
 
-#contactModale_icon {
+#quizzModale_icon {
   display: flex;
   padding: 0.2rem;
   font-size: 17px;
-  background-color: map-get($colors, sky);
+  background-color: map-get($colors, grass);
   transform: rotate(45deg);
   @include responsiveSmartphones {
     font-size: 15px;
   }
   &:hover {
-    background-color: map-get($colors, grass);
-    animation: anim-contactIcon 3000ms infinite linear;
+    background-color: map-get($colors, sky);
+    animation: anim-quizzIcon 3000ms infinite linear;
   }
   svg {
     transform: rotate(-45deg);

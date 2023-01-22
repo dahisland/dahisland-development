@@ -1,0 +1,153 @@
+@import "../../style/utils";
+
+@keyframes ladybird-move {
+  0% {
+    transform: translate(0, 0) rotate(60deg);
+    background-image: url("../../assets/ladybird.png");
+  }
+  20% {
+    background-image: url("../../assets/ladybird.png");
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  21% {
+    background-image: url("../../assets/ladybird-fly.png");
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  22% {
+    background-image: url("../../assets/ladybird.png");
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  23% {
+    background-image: url("../../assets/ladybird-fly.png");
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  24% {
+    background-image: url("../../assets/ladybird.png");
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  25% {
+    transform: translate(250px, -100px) rotate(60deg);
+  }
+  30% {
+    transform: translate(250px, -100px) rotate(150deg);
+  }
+
+  50% {
+    transform: translate(400px, 120px) rotate(150deg);
+  }
+  52% {
+    transform: translate(400px, 120px) rotate(150deg);
+  }
+  57% {
+    transform: translate(400px, 120px) rotate(300deg);
+  }
+
+  86% {
+    background-image: url("../../assets/ladybird.png");
+  }
+  87% {
+    background-image: url("../../assets/ladybird-fly.png");
+    transform: translate(0, 0) rotate(300deg);
+  }
+  88% {
+    background-image: url("../../assets/ladybird.png");
+  }
+  89% {
+    background-image: url("../../assets/ladybird-fly.png");
+  }
+  90% {
+    background-image: url("../../assets/ladybird.png");
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(300deg);
+  }
+}
+
+#ladybird_quizz {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  bottom: 2%;
+  left: 5%;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/ladybird.png");
+  background-size: contain;
+  animation: ladybird-move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+@keyframes ladybird-text-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(250px, -100px);
+  }
+  21% {
+    transform: translate(250px, -100px);
+  }
+  22% {
+    transform: translate(250px, -100px);
+  }
+  23% {
+    transform: translate(250px, -100px);
+  }
+  24% {
+    transform: translate(250px, -100px);
+  }
+  25% {
+    transform: translate(250px, -100px);
+  }
+  30% {
+    transform: translate(250px, -100px);
+  }
+  50% {
+    transform: translate(400px, 120px);
+  }
+  52% {
+    transform: translate(400px, 120px);
+  }
+  57% {
+    transform: translate(400px, 120px);
+  }
+  87% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.ladybird_text {
+  opacity: 0;
+  position: absolute;
+  color: map-get($colors, night);
+  z-index: 100;
+  bottom: 3%;
+  left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/ladybird-bubble.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  width: 100px;
+  height: 50px;
+  animation: ladybird-text-move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+.ladybird_text--hidden {
+  opacity: 0;
+}
+
+.ladybird_text--visible {
+  opacity: 1;
+}

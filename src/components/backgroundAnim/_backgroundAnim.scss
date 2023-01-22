@@ -57,6 +57,7 @@
 
 .backgroundAnim_bubble:nth-child(3) {
   @include ladybirdBubbles;
+  z-index: 999;
   top: 48%;
   left: 69%;
   animation-duration: 21s;

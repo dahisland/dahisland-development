@@ -33,6 +33,7 @@ main {
   background: map-get($colors, gradient);
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 section {

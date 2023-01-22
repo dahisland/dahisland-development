@@ -7,7 +7,7 @@ const SectionAbout = React.forwardRef(({ data }, aboutRef) => {
   return (
     <section id="sectionAbout" ref={aboutRef}>
       <SectionAboutContent data={data} />
-      <Features />
+      {/* <Features /> */}
     </section>
   );
 });

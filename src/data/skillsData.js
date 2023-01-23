@@ -4,6 +4,7 @@ export const skillsData = {
     skills: [
       { name: "HTML5", id: "html5", level: 4 },
       { name: "CSS3", id: "css3", level: 4 },
+      { name: "SASS", id: "sass", level: 3.5 },
       { name: "Javascript", id: "js", level: 3 },
       { name: "React", id: "react", level: 3 },
       { name: "Figma", id: "figma", level: 3.5 },
@@ -25,6 +26,7 @@ export const skillsData = {
     skills: [
       { name: "HTML5", id: "html5", level: 4 },
       { name: "CSS3", id: "css3", level: 4 },
+      { name: "SASS", id: "sass", level: 3.5 },
       { name: "Javascript", id: "js", level: 3 },
       { name: "React", id: "react", level: 3 },
       { name: "Figma", id: "figma", level: 3.5 },

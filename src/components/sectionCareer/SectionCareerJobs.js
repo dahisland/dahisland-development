@@ -22,12 +22,15 @@ const SectionCareerJobs = ({ data }) => {
     { link: FaSmileBeam, id: "hello" },
     { link: GiPopcorn, id: "ugc" },
     { link: MdSell, id: "seller" },
+    { link: "", id: "" },
   ];
 
   function iconFiltered(item) {
     const iconSelected = icons.filter((el) => el.id === item.iconId)[0];
-    const Icon = iconSelected.link;
-    return <Icon size="20px" />;
+    if (item.iconId !== "") {
+      const Icon = iconSelected.link;
+      return <Icon size="20px" />;
+    }
   }
 
   const transition = {
@@ -56,7 +59,7 @@ const SectionCareerJobs = ({ data }) => {
           <motion.path
             fill="transparent"
             strokeWidth="2"
-            stroke="rgba(3, 62, 75, 0.2)"
+            stroke="transparent"
             strokeLinecap="round"
             pathLength="0"
             d="M 81.105 14.599 C 135.716 34.064 31.361 52.448 71.913 94.082 C 173.566 193.572 58.937 202.764 46.5 242.775 C 35.146 284.41 81.646 302.253 77.32 320.637"
@@ -68,7 +71,11 @@ const SectionCareerJobs = ({ data }) => {
         {data.jobs.map((item) => (
           <motion.div
             key={"motionEl-" + item.name}
-            className="elementsJobs_motionDiv"
+            className={
+              item.iconId !== ""
+                ? "elementsJobs_motionDiv"
+                : "elementsJobs_motionDiv--empty"
+            }
             variants={item.variant}
             initial="hidden"
             whileInView="visible"

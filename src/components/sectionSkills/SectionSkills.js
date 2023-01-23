@@ -19,7 +19,7 @@ import {
   SiFramer,
   SiVisualstudio,
 } from "react-icons/si";
-import { IoLogoNpm } from "react-icons/io";
+import { IoLogoNpm, IoLogoSass } from "react-icons/io";
 import { RiStarSFill, RiStarSLine, RiStarHalfSFill } from "react-icons/ri";
 
 const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
@@ -28,6 +28,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
   const icons = [
     { link: SiHtml5, id: "html5", color: "#f22601" },
     { link: SiCss3, id: "css3", color: "#2aaadf" },
+    { link: IoLogoSass, id: "sass", color: "#c36291" },
     { link: SiJavascript, id: "js", color: "#fed73c" },
     { link: SiReact, id: "react", color: "#00d8ff" },
     { link: SiFigma, id: "figma", color: "#ff7261" },

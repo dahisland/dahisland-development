@@ -131,3 +131,23 @@
     }
   }
 }
+
+.elementsJobs_motionDiv--empty {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+  offset-path: path(
+    "M 81.105 14.599 C 135.716 34.064 31.361 52.448 71.913 94.082 C 173.566 193.572 58.937 202.764 46.5 242.775 C 35.146 284.41 81.646 302.253 77.32 320.637"
+  );
+  offset-rotate: 0deg;
+}

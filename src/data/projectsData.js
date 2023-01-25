@@ -4,7 +4,7 @@ export const projectsData = {
     gallery: [
       {
         name: "Booki",
-        url: "booki.png",
+        imgId: "booki.png",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
           { name: "Website", url: "https://dahisland.github.io/booki" },
@@ -15,7 +15,7 @@ export const projectsData = {
       },
       {
         name: "Ohmyfood",
-        url: "ohmyfood.png",
+        imgId: "ohmyfood.png",
         links: [
           {
             name: "Github",
@@ -33,7 +33,7 @@ export const projectsData = {
       },
       {
         name: "GameOn",
-        url: "gameon.png",
+        imgId: "gameon.png",
         links: [
           {
             name: "Github",
@@ -51,7 +51,7 @@ export const projectsData = {
       },
       {
         name: "Fisheye",
-        url: "fisheye.png",
+        imgId: "fisheye.png",
         links: [
           {
             name: "Github",
@@ -68,7 +68,7 @@ export const projectsData = {
       },
       {
         name: "Les petits plats",
-        url: "lespetitsplats.png",
+        imgId: "lespetitsplats.png",
         links: [
           {
             name: "Github",
@@ -86,7 +86,7 @@ export const projectsData = {
       },
       {
         name: "Billed",
-        url: "billed.png",
+        imgId: "billed.png",
         links: [
           {
             name: "Github",
@@ -99,7 +99,7 @@ export const projectsData = {
       },
       {
         name: "Learn@Home",
-        url: "learnathome.png",
+        imgId: "learnathome.png",
         links: [
           {
             name: "Figma",
@@ -112,7 +112,7 @@ export const projectsData = {
       },
       {
         name: "Kasa",
-        url: "kasa.png",
+        imgId: "kasa.png",
         links: [
           {
             name: "Github",
@@ -129,7 +129,7 @@ export const projectsData = {
       },
       {
         name: "Sportsee",
-        url: "sportsee.png",
+        imgId: "sportsee.png",
         links: [
           {
             name: "Github",
@@ -146,7 +146,7 @@ export const projectsData = {
       },
       {
         name: "Argent Bank",
-        url: "argentbank.png",
+        imgId: "argentbank.png",
         links: [
           {
             name: "Github",
@@ -159,7 +159,7 @@ export const projectsData = {
       },
       {
         name: "Wealth Health",
-        url: "wealth.png",
+        imgId: "wealth.png",
         links: [
           {
             name: "Github",
@@ -181,7 +181,7 @@ export const projectsData = {
     gallery: [
       {
         name: "Booki",
-        url: "booki.png",
+        imgId: "booki.png",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
           { name: "Website", url: "https://dahisland.github.io/booki" },
@@ -192,7 +192,7 @@ export const projectsData = {
       },
       {
         name: "Ohmyfood",
-        url: "ohmyfood.png",
+        imgId: "ohmyfood.png",
         links: [
           {
             name: "Github",
@@ -210,7 +210,7 @@ export const projectsData = {
       },
       {
         name: "GameOn",
-        url: "gameon.png",
+        imgId: "gameon.png",
         links: [
           {
             name: "Github",
@@ -228,7 +228,7 @@ export const projectsData = {
       },
       {
         name: "Fisheye",
-        url: "fisheye.png",
+        imgId: "fisheye.png",
         links: [
           {
             name: "Github",
@@ -245,7 +245,7 @@ export const projectsData = {
       },
       {
         name: "Les petits plats",
-        url: "lespetitsplats.png",
+        imgId: "lespetitsplats.png",
         links: [
           {
             name: "Github",
@@ -262,7 +262,7 @@ export const projectsData = {
       },
       {
         name: "Billed",
-        url: "billed.png",
+        imgId: "billed.png",
         links: [
           {
             name: "Github",
@@ -275,7 +275,7 @@ export const projectsData = {
       },
       {
         name: "Learn@Home",
-        url: "learnathome.png",
+        imgId: "learnathome.png",
         links: [
           {
             name: "Figma",
@@ -288,7 +288,7 @@ export const projectsData = {
       },
       {
         name: "Kasa",
-        url: "kasa.png",
+        imgId: "kasa.png",
         links: [
           {
             name: "Github",
@@ -305,7 +305,7 @@ export const projectsData = {
       },
       {
         name: "Sportsee",
-        url: "sportsee.png",
+        imgId: "sportsee.png",
         links: [
           {
             name: "Github",
@@ -322,7 +322,7 @@ export const projectsData = {
       },
       {
         name: "Argent Bank",
-        url: "argentbank.png",
+        imgId: "argentbank.png",
         links: [
           {
             name: "Github",
@@ -335,7 +335,7 @@ export const projectsData = {
       },
       {
         name: "Wealth Health",
-        url: "wealth.png",
+        imgId: "wealth.png",
         links: [
           {
             name: "Github",

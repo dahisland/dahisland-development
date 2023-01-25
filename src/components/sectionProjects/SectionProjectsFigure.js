@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionProjectsFigcaption from "./SectionProjectsFigcaption";
+import { imagesProjects } from "./sectionprojects.images";
 
 const SectionProjectsFigure = ({
   dataGallery,
@@ -8,6 +9,11 @@ const SectionProjectsFigure = ({
   slide,
   setSlide,
 }) => {
+  function filterImgUrl(item) {
+    const image = imagesProjects.filter((el) => el.imgId === item.imgId)[0];
+    return image.url;
+  }
+
   return (
     <figure
       className={`projectsGallery_container`}
@@ -16,11 +22,7 @@ const SectionProjectsFigure = ({
     >
       <picture className="projectsGallery_picture">
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/img/projects/" +
-            dataGallery[indexGallery].url
-          }
+          src={filterImgUrl(dataGallery[indexGallery])}
           alt={dataGallery[indexGallery].name}
         />
       </picture>

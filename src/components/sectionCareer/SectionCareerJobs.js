@@ -35,7 +35,7 @@ const SectionCareerJobs = ({ data }) => {
 
   const transition = {
     ease: "easeInOut",
-    duration: 4,
+    duration: 3,
     yoyo: Infinity,
   };
   return (

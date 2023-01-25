@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { classesTags } from "./classesTags";
+import { classesTags } from "./sectionprojects.images";
 
 const SectionProjectsFigcaption = ({ dataGallery, indexGallery }) => {
   const initRandomClasses = ["", "", "", "", "", "", "", ""];

@@ -26,10 +26,10 @@
   justify-content: space-between;
   align-items: center;
   @include responsiveTabloids {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   @include responsiveSmartphones {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 
   .projectsGallery_container {

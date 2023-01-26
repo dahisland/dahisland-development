@@ -55,7 +55,7 @@ const SectionCareerJobs = ({ data }) => {
         root={null}
         rootMargin="0px"
       >
-        <svg width="100%" height="100%" viewBox="-25 0 200 350">
+        <svg width="100%" height="100%" viewBox="-25 0 200 400">
           <motion.path
             fill="transparent"
             strokeWidth="2"
@@ -88,6 +88,9 @@ const SectionCareerJobs = ({ data }) => {
           </motion.div>
         ))}
       </InView>
+      <div className="elementsJobs_legend">
+        <h2>{data.titleJobs.toUpperCase()}</h2>
+      </div>
     </div>
   );
 };

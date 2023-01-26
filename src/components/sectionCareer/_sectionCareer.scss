@@ -46,36 +46,46 @@
   }
 }
 
-.sectionCareer_elements {
+.sectionCareer_formation {
   margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  p {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    // font-variant: small-caps;
+    color: map-get($colors, night);
+    border-left: 4px solid map-get($colors, night);
+    border-right: 4px solid map-get($colors, night);
+  }
+}
+
+.sectionCareer_elements {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   @include responsiveTabloids {
     margin-top: 3rem;
   }
   @include responsiveSmartphones {
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
   }
 
   .sectionCareerElements_jobs {
-    background-image: url("../../assets/leaf-opacity.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    // animation: ladybird-fly 6000ms infinite ease-in-out;
-  }
-  .sectionCareerElements_pastWork {
-    width: 60%;
-    height: 400px;
-    background-color: rgba(3, 62, 75, 0.8);
-    border-radius: 5px;
-    @include responsiveTabloids {
-      width: 50%;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 500px;
     @include responsiveSmartphones {
       width: 100%;
     }
@@ -84,16 +94,21 @@
 
 .elementsJobs_motionPath {
   position: relative;
+  background-image: url("../../assets/leaf-opacity.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
   width: 100%;
   max-width: 200px;
-  height: 350px;
-  margin-top: 2rem;
+  height: 401.07px;
+  margin: 0 auto;
 }
 
 .elementsJobs_motionDiv {
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 2rem;
   left: 25px;
   display: flex;
   justify-content: center;
@@ -135,7 +150,7 @@
 .elementsJobs_motionDiv--empty {
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 2rem;
   left: 25px;
   display: flex;
   justify-content: center;
@@ -149,4 +164,16 @@
     "M 81.105 14.599 C 135.716 34.064 31.361 52.448 71.913 94.082 C 173.566 193.572 58.937 202.764 46.5 242.775 C 35.146 284.41 81.646 302.253 77.32 320.637"
   );
   offset-rotate: 0deg;
+}
+
+.elementsJobs_legend {
+  height: 102px;
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: inherit;
+    background-color: rgba(3, 62, 75, 0.4);
+    padding: 5px;
+  }
 }

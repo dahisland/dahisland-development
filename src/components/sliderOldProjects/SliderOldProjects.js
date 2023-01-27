@@ -52,17 +52,17 @@ const SliderOldProjects = ({ data }) => {
               onMouseLeave={() => setIsOnHover(false)}
             >
               <img src={item.imgLink} alt=""></img>
-              <figcaption>
+              <figcaption className="oldProjects_elementCaption">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
                 <a
                   href={item.link}
                   alt=""
-                  className="oldProjects_elementCaption"
                   target="_blank"
                   rel="noreferrer"
+                  className="elementCaption_linkTxt"
                 >
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <p className="elementCaption_linkTxt">{item.linkTxt}</p>
+                  {item.linkTxt}
                 </a>
               </figcaption>
             </figure>

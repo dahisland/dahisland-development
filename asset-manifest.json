@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dahisland-development/static/css/main.1cf3294f.css",
-    "main.js": "/dahisland-development/static/js/main.6feed8e9.js",
+    "main.js": "/dahisland-development/static/js/main.9f803705.js",
     "static/media/lespetitsplats.png": "/dahisland-development/static/media/lespetitsplats.f82e68f0455e646f5e42.png",
     "static/media/ohmyfood.png": "/dahisland-development/static/media/ohmyfood.10b36e0125bec48320be.png",
     "static/media/fisheye.png": "/dahisland-development/static/media/fisheye.37c6f96bed3da0b78778.png",
@@ -22,14 +22,14 @@
     "static/media/t-aplat.jpg": "/dahisland-development/static/media/t-aplat.749b4561aea148bc9f52.jpg",
     "static/media/casa.jpg": "/dahisland-development/static/media/casa.b83bcdb275b483304a57.jpg",
     "static/media/salon-maison.jpg": "/dahisland-development/static/media/salon-maison.bceecb09c15a3377267c.jpg",
+    "static/media/buzz.jpg": "/dahisland-development/static/media/buzz.87b0f6a0371e20e0ee8b.jpg",
     "static/media/sportsee.png": "/dahisland-development/static/media/sportsee.d35d08543e6a08fae14a.png",
+    "static/media/lego-jackson.jpg": "/dahisland-development/static/media/lego-jackson.13cc462bd2198fb77b93.jpg",
     "static/media/bijou01.jpg": "/dahisland-development/static/media/bijou01.5d00e3f74a476acfb773.jpg",
-    "static/media/buzz.jpg": "/dahisland-development/static/media/buzz.73f0f774842aa0c0b9a3.jpg",
     "static/media/roue.jpg": "/dahisland-development/static/media/roue.aec7af55f09250a6008c.jpg",
-    "static/media/lego-jackson.jpg": "/dahisland-development/static/media/lego-jackson.3e39e746def4dcc5807f.jpg",
     "static/media/carigraph.jpg": "/dahisland-development/static/media/carigraph.0c6c727d7ee138b87e35.jpg",
     "static/media/billed.png": "/dahisland-development/static/media/billed.9c0a843b8003c508a643.png",
-    "static/media/nmotion.jpg": "/dahisland-development/static/media/nmotion.8699bf7a99fec2137937.jpg",
+    "static/media/nmotion.jpg": "/dahisland-development/static/media/nmotion.4913ee0f7762917c8beb.jpg",
     "static/media/logo.png": "/dahisland-development/static/media/logo.20c2019f743e216c46d0.png",
     "static/media/t-zinzin.jpg": "/dahisland-development/static/media/t-zinzin.dbccb0e59d86a044a207.jpg",
     "static/media/ladybird-fly.png": "/dahisland-development/static/media/ladybird-fly.8fd4a64c2ee20b4554ea.png",
@@ -39,10 +39,10 @@
     "static/media/ladybird-opacity.png": "/dahisland-development/static/media/ladybird-opacity.22b4e1517f3cf73d95b8.png",
     "index.html": "/dahisland-development/index.html",
     "main.1cf3294f.css.map": "/dahisland-development/static/css/main.1cf3294f.css.map",
-    "main.6feed8e9.js.map": "/dahisland-development/static/js/main.6feed8e9.js.map"
+    "main.9f803705.js.map": "/dahisland-development/static/js/main.9f803705.js.map"
   },
   "entrypoints": [
     "static/css/main.1cf3294f.css",
-    "static/js/main.6feed8e9.js"
+    "static/js/main.9f803705.js"
   ]
 }

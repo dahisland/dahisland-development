@@ -31,6 +31,7 @@ const SliderOldProjects = ({ data }) => {
     } else {
       resetTimeout();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, isOnHover]);
 
   return (

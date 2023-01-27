@@ -30,18 +30,18 @@ const PageHeader = ({
         </figure>
       </div>
 
-      <Navigation
-        data={data}
-        positionScrollY={positionScrollY}
-        sectionsHeight={sectionsHeight}
-      />
-
-      <div className="header_contact">
-        <ContactMail setContactModale={setContactModale} />
-        <SocialMedias />
+      <div className="header_navContacts">
+        <Navigation
+          data={data}
+          positionScrollY={positionScrollY}
+          sectionsHeight={sectionsHeight}
+        />
+        <div className="header_contact">
+          <ContactMail setContactModale={setContactModale} />
+          <SocialMedias />
+        </div>
+        <p className="header_copyright">©2023 Myriam Mornet</p>
       </div>
-
-      <p className="header_copyright">©2022 Myriam Mornet</p>
     </header>
   );
 };

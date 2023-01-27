@@ -63,6 +63,12 @@ $weights: (
   }
 }
 
+@mixin responsiveMini {
+  @media screen and (max-width: 270px) {
+    @content;
+  }
+}
+
 @mixin bigBubbles {
   color: #033e4b;
   width: 19vmin;

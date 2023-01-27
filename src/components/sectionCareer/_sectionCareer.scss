@@ -52,16 +52,34 @@
   display: flex;
   text-align: center;
   flex-wrap: wrap;
+  @include responsiveTabloids {
+    margin-top: 2rem;
+  }
   p {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    cursor: default;
+    background-color: rgba(3, 62, 75, 0.4);
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px;
-    // font-variant: small-caps;
-    color: map-get($colors, night);
-    border-left: 4px solid map-get($colors, night);
-    border-right: 4px solid map-get($colors, night);
+    font-size: 16px;
+    font-weight: 400;
+    color: map-get($colors, snow);
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    scale: 1;
+    transition: 400ms ease-in-out;
+    &:hover {
+      font-weight: bold;
+      background-color: rgba(3, 62, 75, 0.6);
+      scale: 1.05;
+    }
+    @include responsiveTabloids {
+      font-size: 14px;
+      &:hover {
+        scale: 1.03;
+      }
+    }
   }
 }
 

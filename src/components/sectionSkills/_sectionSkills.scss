@@ -11,6 +11,7 @@
   gap: 4%;
   @include responsiveTabloids {
     gap: 2%;
+    margin-top: 2rem;
   }
   @include responsiveSmartphones {
     gap: 6%;

@@ -20,21 +20,14 @@
     transform: translateX(-50%);
     font-size: map-get($sizes, l);
     @include responsiveTabloids {
-      font-size: 10px;
+      top: 2px;
+      font-size: map-get($sizes, xs);
     }
   }
 
   &:hover {
     svg {
       fill: map-get($colors, grass);
-    }
-    span {
-      top: 2px;
-      font-size: map-get($sizes, xl);
-      @include responsiveTabloids {
-        top: 4px;
-        font-size: 11px;
-      }
     }
   }
 }

@@ -7,7 +7,8 @@
   margin-top: 5px;
   @include responsiveTabloids {
     justify-content: flex-start;
-    gap: 5px;
+    width: fit-content;
+    gap: 6px;
     margin-top: 0px;
   }
 

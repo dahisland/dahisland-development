@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-2022",
+  "name": "portfolio-dahisland",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dahisland.github.io/portfolio2022",
+  "homepage": "http://dahisland.github.io/dahisland-development",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

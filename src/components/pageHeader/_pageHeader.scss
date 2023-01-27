@@ -56,10 +56,12 @@ header {
     font-size: 23px;
     color: map-get($colors, sky);
     letter-spacing: 0.5px;
+    line-height: 20px;
     display: flex;
     flex-direction: column;
     @include responsiveTabloids {
       font-size: 19px;
+      line-height: 17px;
     }
     span {
       color: map-get($colors, grass);

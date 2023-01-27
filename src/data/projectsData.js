@@ -81,7 +81,7 @@ export const projectsData = {
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Algo"],
         description:
-          "Développement d'un alogithme de recherche avec version native et programmation fonctionnelle",
+          "Développement d'un algorithme de recherche avec version native et programmation fonctionnelle",
         order: 5,
       },
       {
@@ -170,7 +170,7 @@ export const projectsData = {
             url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
           },
         ],
-        tags: ["React", "Javascript", "Libraries", "HTML5", "CSS3"],
+        tags: ["React", "Javascript", "Redux", "Libraries", "HTML5", "CSS3"],
         description: "",
         order: 11,
       },
@@ -346,7 +346,7 @@ export const projectsData = {
             url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
           },
         ],
-        tags: ["React", "Javascript", "Libraries", "HTML5", "CSS3"],
+        tags: ["React", "Javascript", "Libraries", "Redux", "HTML5", "CSS3"],
         description: "",
         order: 11,
       },

@@ -2,7 +2,7 @@ $colors: (
   sky: #0ebbf1,
   grass: #8fdd09,
   gradient: linear-gradient(#0ebbf1, #8fdd09),
-  night: #033e4b,
+  night: #022c35,
   snow: #fff,
   random: rgb(random(255), random(255), random(255)),
   blood: crimson,
@@ -70,28 +70,28 @@ $weights: (
 }
 
 @mixin bigBubbles {
-  color: #033e4b;
+  color: #022c35;
   width: 19vmin;
   height: 19vmin;
-  box-shadow: 0px 0px 10vmin rgba(3, 62, 75, 0.5);
+  box-shadow: 0px 0px 10vmin rgba(2, 44, 53, 0.5);
 }
 
 @mixin mediumBubbles {
-  color: #033e4b;
+  color: #022c35;
   width: 12vmin;
   height: 12vmin;
-  box-shadow: 0px 0px 4vmin rgba(3, 62, 75, 0.5);
+  box-shadow: 0px 0px 4vmin rgba(2, 44, 53, 0.5);
 }
 
 @mixin smallBubbles {
-  color: #033e4b;
+  color: #022c35;
   width: 9vmin;
   height: 9vmin;
-  box-shadow: 0px 0px 3vmin rgba(3, 62, 75, 0.5);
+  box-shadow: 0px 0px 3vmin rgba(2, 44, 53, 0.5);
 }
 
 @mixin ladybirdBubbles {
-  color: #033e4b;
+  color: #022c35;
   width: 7vmin;
   height: 7vmin;
   background-image: url("../assets/ladybird.png");

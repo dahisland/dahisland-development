@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dahisland-development/static/css/main.f091dca4.css",
+    "main.css": "/dahisland-development/static/css/main.1cf3294f.css",
     "main.js": "/dahisland-development/static/js/main.6feed8e9.js",
     "static/media/lespetitsplats.png": "/dahisland-development/static/media/lespetitsplats.f82e68f0455e646f5e42.png",
     "static/media/ohmyfood.png": "/dahisland-development/static/media/ohmyfood.10b36e0125bec48320be.png",
@@ -38,11 +38,11 @@
     "static/media/ladybird.png": "/dahisland-development/static/media/ladybird.ae6487550cc075f56181.png",
     "static/media/ladybird-opacity.png": "/dahisland-development/static/media/ladybird-opacity.22b4e1517f3cf73d95b8.png",
     "index.html": "/dahisland-development/index.html",
-    "main.f091dca4.css.map": "/dahisland-development/static/css/main.f091dca4.css.map",
+    "main.1cf3294f.css.map": "/dahisland-development/static/css/main.1cf3294f.css.map",
     "main.6feed8e9.js.map": "/dahisland-development/static/js/main.6feed8e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f091dca4.css",
+    "static/css/main.1cf3294f.css",
     "static/js/main.6feed8e9.js"
   ]
 }

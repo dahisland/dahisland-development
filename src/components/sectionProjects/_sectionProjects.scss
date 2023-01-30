@@ -59,8 +59,37 @@
   }
 
   .projectsGallery_picture {
+    position: relative;
     width: 50%;
     height: 300px;
+    &::after {
+      opacity: 0;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 100%;
+      padding: 0% 5%;
+      background-color: rgba(2, 44, 53, 0.8);
+      content: "";
+      transition: 500ms ease-in-out;
+      @include responsiveSmartphones {
+        font-size: 14px;
+      }
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+        background-color: rgba(2, 44, 53, 0.8);
+        content: attr(data-description);
+      }
+    }
     @include responsiveTabloids {
       height: 265px;
     }
@@ -96,7 +125,7 @@
     @include responsiveSmartphones {
       width: 100%;
       padding: 10px;
-      min-height: 190px;
+      min-height: 175px;
     }
     h2 {
       font-family: map-get($fonts, elite);

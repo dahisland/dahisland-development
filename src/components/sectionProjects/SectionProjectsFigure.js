@@ -20,7 +20,10 @@ const SectionProjectsFigure = ({
       slide={slide}
       onAnimationEnd={() => setSlide(0)}
     >
-      <picture className="projectsGallery_picture">
+      <picture
+        className="projectsGallery_picture"
+        data-description={dataGallery[indexGallery].description}
+      >
         <img
           src={filterImgUrl(dataGallery[indexGallery])}
           alt={dataGallery[indexGallery].name}

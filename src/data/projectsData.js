@@ -62,8 +62,9 @@ export const projectsData = {
             url: "https://dahisland.github.io/MyriamMornet_6_17022022/",
           },
         ],
-        tags: ["HTML5", "CSS3", "Javascript", "Accessibility"],
-        description: "",
+        tags: ["HTML5", "CSS3", "Javascript", "Accessibilité"],
+        description:
+          "Développement Javascript d'une plateforme accessible de photographes",
         order: 4,
       },
       {
@@ -81,7 +82,7 @@ export const projectsData = {
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Algo"],
         description:
-          "Développement d'un algorithme de recherche avec version native et programmation fonctionnelle",
+          "Développement d'un algorithme de recherche en 2 versions : programmation native et programmation fonctionnelle",
         order: 5,
       },
       {
@@ -94,7 +95,7 @@ export const projectsData = {
           },
         ],
         tags: ["Javascript", "Jest"],
-        description: "",
+        description: "Mise en place de tests et debugging d'un SaaS RH",
         order: 6,
       },
       {
@@ -107,7 +108,8 @@ export const projectsData = {
           },
         ],
         tags: ["User Stories", "Graphic design", "Figma"],
-        description: "",
+        description:
+          "Maquette Figma dynamique et définition des fonctionnalités d'une app de soutien scolaire",
         order: 7,
       },
       {
@@ -124,7 +126,8 @@ export const projectsData = {
           },
         ],
         tags: ["React", "Javascript", "HTML5", "CSS3"],
-        description: "",
+        description:
+          "Développement d'une application avec React et React Router",
         order: 8,
       },
       {
@@ -141,7 +144,8 @@ export const projectsData = {
           },
         ],
         tags: ["React", "Javascript", "Recharts", "HTML5", "CSS3"],
-        description: "",
+        description:
+          "Implémentation d'outils analytics de suivi sportif avec React et Recharts",
         order: 9,
       },
       {
@@ -153,8 +157,9 @@ export const projectsData = {
             url: "https://github.com/dahisland/MyriamMornet_13_112022",
           },
         ],
-        tags: ["React", "Javascript", "Redux", "HTML5", "CSS3"],
-        description: "",
+        tags: ["React", "Javascript", "Redux", "HTML5", "CSS3", "JWT", "API"],
+        description:
+          "Développement d'une app avec échanges API pour un compte utilisateur bancaire",
         order: 10,
       },
       {
@@ -170,8 +175,9 @@ export const projectsData = {
             url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
           },
         ],
-        tags: ["React", "Javascript", "Redux", "Libraries", "HTML5", "CSS3"],
-        description: "",
+        tags: ["React", "Javascript", "Redux", "Librairies", "HTML5", "CSS3"],
+        description:
+          "Conversion d'une app obsolète avec Jquery en composants et librairies React",
         order: 11,
       },
     ],
@@ -187,7 +193,7 @@ export const projectsData = {
           { name: "Website", url: "https://dahisland.github.io/booki" },
         ],
         tags: ["HTML5", "CSS3"],
-        description: "Prototype in HTML5 / CSS3",
+        description: "Prototyping in HTML5 / CSS3",
         order: 1,
       },
       {
@@ -205,7 +211,7 @@ export const projectsData = {
         ],
         tags: ["HTML5", "CSS3", "SASS"],
         description:
-          "Prototype responsive in mobile first with CSS3 dynamics animations",
+          "Prototyping responsive in mobile first with CSS3 dynamics animations",
         order: 2,
       },
       {
@@ -240,7 +246,8 @@ export const projectsData = {
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Accessibility"],
-        description: "",
+        description:
+          "Javascript development of an accessible platform for photographers",
         order: 4,
       },
       {
@@ -257,7 +264,8 @@ export const projectsData = {
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Algo"],
-        description: "",
+        description:
+          "Search's algorithm development in 2 versions : native programming & functional programming",
         order: 5,
       },
       {
@@ -270,7 +278,7 @@ export const projectsData = {
           },
         ],
         tags: ["Javascript", "Jest"],
-        description: "",
+        description: "Implementation of tests and debugging for an HR SaaS",
         order: 6,
       },
       {
@@ -283,7 +291,8 @@ export const projectsData = {
           },
         ],
         tags: ["User Stories", "Graphic design", "Figma"],
-        description: "",
+        description:
+          "Dynamic Figma model and definition of the functionalities for a tutoring app",
         order: 7,
       },
       {
@@ -300,7 +309,7 @@ export const projectsData = {
           },
         ],
         tags: ["React", "Javascript", "HTML5", "CSS3"],
-        description: "",
+        description: "Developing an application with React and React Router",
         order: 8,
       },
       {
@@ -317,7 +326,8 @@ export const projectsData = {
           },
         ],
         tags: ["React", "Javascript", "Recharts", "HTML5", "CSS3"],
-        description: "",
+        description:
+          "Implementation of sports tracking analytics tools with React and Recharts",
         order: 9,
       },
       {
@@ -329,8 +339,9 @@ export const projectsData = {
             url: "https://github.com/dahisland/MyriamMornet_13_112022",
           },
         ],
-        tags: ["React", "Javascript", "Redux", "HTML5", "CSS3"],
-        description: "",
+        tags: ["React", "Javascript", "Redux", "HTML5", "CSS3", "JWT", "API"],
+        description:
+          "App with API exchanges development for a bank user account",
         order: 10,
       },
       {
@@ -347,7 +358,8 @@ export const projectsData = {
           },
         ],
         tags: ["React", "Javascript", "Libraries", "Redux", "HTML5", "CSS3"],
-        description: "",
+        description:
+          "Obsolete app with Jquery conversion into React components and NPM libraries",
         order: 11,
       },
     ],

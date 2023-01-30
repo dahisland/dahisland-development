@@ -1,11 +1,25 @@
 @import "../../style/utils";
 
+// Animation for profile image
+@keyframes anim-profile {
+  0% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}
+
 #sectionAbout {
   p {
     padding-top: 16px;
   }
 }
 
+// Container for presentation text and profile image
 .sectionAbout_presentation {
   margin-top: 2.5rem;
   display: flex;
@@ -25,19 +39,7 @@
     width: 100%;
   }
 }
-@keyframes anim-profile {
-  0% {
-    transform: translate(-5px, -5px);
-  }
 
-  50% {
-    transform: translate(5px, 5px);
-  }
-
-  100% {
-    transform: translate(-5px, -5px);
-  }
-}
 .sectionAboutPresentation_img {
   position: relative;
   float: right;

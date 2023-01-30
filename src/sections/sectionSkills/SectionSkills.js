@@ -23,8 +23,10 @@ import { IoLogoNpm, IoLogoSass } from "react-icons/io";
 import { RiStarSFill, RiStarSLine, RiStarHalfSFill } from "react-icons/ri";
 
 const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
+  // Array to display stars notation for each skill
   const range = [1, 2, 3, 4, 5];
 
+  // Array of links of each skill icon with personnalized style
   const icons = [
     { link: SiHtml5, id: "html5", color: "#f22601" },
     { link: SiCss3, id: "css3", color: "#2aaadf" },
@@ -45,6 +47,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     { link: SiVisualstudio, id: "vscode", color: "#2d9eea" },
   ];
 
+  // Function to filter icon for each skill displayed
   function iconFiltered(item) {
     const iconSelected = icons.filter((el) => el.id === item.id)[0];
     const Icon = iconSelected.link;

@@ -1,5 +1,6 @@
 @import "../../style/utils";
 
+// Container for Quizz form displayed on click upon the animated ladybird
 .quizz_form {
   color: map-get($colors, night);
   padding: 2rem 0rem 0rem 0rem;
@@ -29,11 +30,14 @@
     color: map-get($colors, night);
   }
 
+  // Container for all the labels and input radios answers propositions
   .quizzFormBlock_propositions {
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
   }
+
+  // Container for each label and input radio answer proposition
   .propositions_radio {
     display: flex;
     flex-direction: row-reverse;
@@ -100,6 +104,7 @@
   color: map-get($colors, blood);
 }
 
+// Container for message displayed after quizz submit success
 .quizzForm_submitted {
   margin: 0 auto;
   margin-top: 2rem;

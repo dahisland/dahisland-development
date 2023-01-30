@@ -10,6 +10,7 @@ import imgOhmyfood from "../../assets/projects/ohmyfood.png";
 import imgSportsee from "../../assets/projects/sportsee.png";
 import imgWealth from "../../assets/projects/wealth.png";
 
+// Random classes array for the tags displayed on gallery caption
 export const classesTags = [
   "galleryCaption_tags--purple",
   "galleryCaption_tags--white",
@@ -24,6 +25,7 @@ export const classesTags = [
   "galleryCaption_tags--black",
 ];
 
+// Links for the images to display on gallery
 export const imagesProjects = [
   { imgId: "argentbank.png", url: imgArgentBank },
   { imgId: "billed.png", url: imgBilled },

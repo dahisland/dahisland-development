@@ -29,6 +29,7 @@ header {
     gap: 0px;
   }
 
+  // Container for logo image and title h1 in header
   .header_logo {
     figure {
       margin: 0 auto;
@@ -73,7 +74,8 @@ header {
     }
   }
 
-  .header_navContacts {
+  // Container for navigation, icon contact, social medias and copyright in header
+  .header_content {
     display: flex;
     flex-direction: column;
     gap: 30px;

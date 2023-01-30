@@ -21,10 +21,6 @@ const Navigation = ({ data, positionScrollY, sectionsHeight }) => {
                     )
                   : null
               }
-              // className="navLink"
-              // activeClass="navLink--active"
-              // spy={true}
-              // isDynamic={true}
             >
               {item.name}
             </Link>
@@ -38,6 +34,7 @@ const Navigation = ({ data, positionScrollY, sectionsHeight }) => {
 Navigation.propTypes = {
   data: PropTypes.array,
   positionScrollY: PropTypes.number,
+  sectionsHeight: PropTypes.object,
 };
 
 export default Navigation;

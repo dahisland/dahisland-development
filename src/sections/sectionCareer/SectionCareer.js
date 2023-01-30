@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionCareerJobs from "./SectionCareerJobs";
-import SliderOldProjects from "../sliderOldProjects/SliderOldProjects";
+import SliderOldProjects from "../../components/sliderOldProjects/SliderOldProjects";
 
 const SectionCareer = React.forwardRef(({ data }, careerRef) => {
   return (

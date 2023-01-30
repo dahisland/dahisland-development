@@ -5,8 +5,13 @@ import emailjs from "@emailjs/browser";
 const ContactForm = ({ contactFormData }) => {
   const form = useRef();
   const [submitted, setSubmitted] = useState(false);
-  const [messageOnSubmit, setMessageOnSubmit] = useState(["", "", ""]);
+  const [messageSubmit, setMessageSubmit] = useState({
+    message: "",
+    codeError: "",
+    error: false,
+  });
 
+  // Send contact form data by using email.js
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -18,17 +23,21 @@ const ContactForm = ({ contactFormData }) => {
       )
       .then(
         (result) => {
-          setMessageOnSubmit([contactFormData.submitSuccess, "", ""]);
+          setMessageSubmit({
+            message: contactFormData.submitSuccess,
+            codeError: "",
+            error: false,
+          });
           setSubmitted(true);
           console.log(result);
           e.target.reset();
         },
         (error) => {
-          setMessageOnSubmit([
-            contactFormData.submitError,
-            `Erreur : ${error.text}`,
-            "error",
-          ]);
+          setMessageSubmit({
+            message: contactFormData.submitError,
+            codeError: `Erreur : ${error.text}`,
+            error: false,
+          });
           setSubmitted(true);
           console.log(error.text);
         }
@@ -69,15 +78,15 @@ const ContactForm = ({ contactFormData }) => {
   ) : (
     <div
       className={
-        messageOnSubmit[2] === "error"
+        messageSubmit.error
           ? "contactForm_submitted--error"
           : "contactForm_submitted"
       }
     >
       <p>
-        {messageOnSubmit[0]}
+        {messageSubmit.message}
         <br />
-        <span>{messageOnSubmit[1]}</span>
+        <span>{messageSubmit.codeError}</span>
       </p>
       <div className="contactForm_buttons">
         <button onClick={() => setSubmitted(false)}>

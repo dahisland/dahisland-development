@@ -9,6 +9,7 @@ const SectionProjectsFigure = ({
   slide,
   setSlide,
 }) => {
+  // Filter image to display when user navigate on gallery
   function filterImgUrl(item) {
     const image = imagesProjects.filter((el) => el.imgId === item.imgId)[0];
     return image.url;

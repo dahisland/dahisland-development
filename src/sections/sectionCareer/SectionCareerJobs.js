@@ -9,11 +9,13 @@ import { IoMdFilm } from "react-icons/io";
 import { FaSmileBeam } from "react-icons/fa";
 
 const SectionCareerJobs = ({ data }) => {
+  // State to change animation when caterpilar job is in view
   const [isInView, setIsInView] = useState({
     pathLength: 0,
     strokeDasharray: "0px 1px",
   });
 
+  // Links for icons images in the caterpilar job
   const icons = [
     { link: RiComputerFill, id: "dev" },
     { link: GiSecretBook, id: "writer" },
@@ -25,6 +27,7 @@ const SectionCareerJobs = ({ data }) => {
     { link: "", id: "" },
   ];
 
+  // Function to charge icon for each caterpilar element
   function iconFiltered(item) {
     const iconSelected = icons.filter((el) => el.id === item.iconId)[0];
     if (item.iconId !== "") {
@@ -33,11 +36,13 @@ const SectionCareerJobs = ({ data }) => {
     }
   }
 
+  // Transition parameters for the caterpilar animation
   const transition = {
     ease: "easeInOut",
     duration: 3,
     yoyo: Infinity,
   };
+
   return (
     <div className="sectionCareerElements_jobs">
       <InView
@@ -68,6 +73,7 @@ const SectionCareerJobs = ({ data }) => {
             transition={transition}
           />
         </svg>
+
         {data.jobs.map((item) => (
           <motion.div
             key={"motionEl-" + item.name}

@@ -30,7 +30,7 @@ const PageHeader = ({
         </figure>
       </div>
 
-      <div className="header_navContacts">
+      <div className="header_content">
         <Navigation
           data={data}
           positionScrollY={positionScrollY}
@@ -50,6 +50,7 @@ PageHeader.propTypes = {
   data: PropTypes.array,
   positionScrollY: PropTypes.number,
   setContactModale: PropTypes.func,
+  sectionsHeight: PropTypes.object,
 };
 
 export default PageHeader;

@@ -1,6 +1,8 @@
+// This function change class of an navigation element when section content is active.
+// it use the scroll Y position, the section position in the page calculated with the height of each section
+// To collect height of each section, a useState is updated in  the useEffect of component App.
 export function toggleActiveClass(item, positionScrollY, sectionsHeight) {
   let classLink = "navLink";
-
   switch (item) {
     case "sectionAbout":
       if (
@@ -59,10 +61,3 @@ export function toggleActiveClass(item, positionScrollY, sectionsHeight) {
   }
   return classLink;
 }
-
-// export const toggleActiveClass = (item) =>
-//   positionScrollY + item.position >=
-//     windowHeight * item.position - windowHeight &&
-//   positionScrollY + item.position < windowHeight * item.position
-//     ? "navLink--active"
-//     : "navLink";

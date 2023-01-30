@@ -1,5 +1,6 @@
 @import "../../style/utils";
 
+// animation background-image for the ladybird quizz clickable
 @keyframes ladybird-fly {
   0% {
     background-image: url("../../assets/ladybird-opacity.png");
@@ -25,7 +26,6 @@
   32% {
     background-image: url("../../assets/ladybird-opacity.png");
   }
-  //
   65% {
     background-image: url("../../assets/ladybird-opacity.png");
   }

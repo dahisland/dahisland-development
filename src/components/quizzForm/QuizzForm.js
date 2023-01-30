@@ -14,6 +14,7 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
     formState: { errors },
   } = useForm();
 
+  // Calculate score of quizz on submit form
   async function submitQuizz(data) {
     const arrayData = [data.Q1, data.Q2, data.Q3];
     let result = 0;
@@ -24,9 +25,11 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
     }
     setScore(result);
     setIsSubmitted(true);
+    // reset form after submit
     reset();
   }
 
+  // Function to open contact modale and close quizz modale
   function openContactForm() {
     setQuizzModale(false);
     setContactModale(true);
@@ -51,6 +54,7 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
         {quizzFormData.form.map((item) => (
           <div className="quizzForm_block" key={item.name}>
             <p className="quizzFormBlock_question">{item.question}</p>
+
             <div className="quizzFormBlock_propositions">
               <div className="propositions_radio">
                 <label htmlFor={item.radio[0].id}>{item.radio[0].value}</label>
@@ -64,6 +68,7 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
                   })}
                 />
               </div>
+
               {item.radio.slice(1).map((el) => (
                 <div className="propositions_radio" key={el.id}>
                   <label htmlFor={el.id}>{el.value}</label>
@@ -77,6 +82,7 @@ const QuizzForm = ({ quizzFormData, setQuizzModale, setContactModale }) => {
                 </div>
               ))}
             </div>
+
             <p className="input-error-message">
               <ErrorMessage errors={errors} name={item.name} />
             </p>

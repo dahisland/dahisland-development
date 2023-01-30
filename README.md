@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](./readme-assets/made-with-react.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![forthebadge](./readme-assets/made-with-framer-motion.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+<div id="header" align="left">
+  <img src="./src/assets/logo.png" width="200"/>
+</div>
 
-In the project directory, you can run:
+# DAHISLAND DEVELOPMENT - PORTFOLIO :
 
-### `npm start`
+Welcome to my portfolio repository and thank you for visiting me !
+This project has been developed after my Front-end developer studies.
+During my learning, I worked on professional project simulations that you also can discover on my Github profile.
+But to know more about me, my career and my skills, this portfolio is for you.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+So don't hesitate to consult it [here](https://dahisland.github.io/dahisland-development/) and if you want, you an give me a feedback by using my contact form.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## TECHNOLOGIES
 
-### `npm test`
+- JS
+- CSS with Sass
+- React
+- Framer Motion
+- Emailjs
+- React-hook-form
+- React-scroll
+- React-icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## MORE ABOUT
 
-### `npm run build`
+### One page website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I choosed to develop a One page website for my portfolio. To optimize the user experience, I used React-scroll to navigate with smooth scrolling in the page.
+Difficulty were to optimize the active class update in the navigation while scrolling. The library hook active weren't optimized. So I had to define each section zone by using React useStates, useEffects, section offsetHeight and position scroll Y while scrolling.
+And it work pretty well !
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Framer Motion :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I didn't learn this wonderful animation library during my studies. I discovered it with this project.
+Framer Motion is powerful and I used it to implement smooth and subtiles animations triggered on scroll.
+I'm a motion lover, so it was very pleasant to play with these composants and hooks.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to give me feedback and advices. I know I'm just at the beginning of my development exploration :-)

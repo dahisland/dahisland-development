@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
-import SectionAbout from "./components/sectionAbout/SectionAbout";
-import SectionProjects from "./components/sectionProjects/SectionProjects";
-import SectionSkills from "./components/sectionSkills/SectionSkills";
+import SectionAbout from "./sections/sectionAbout/SectionAbout";
+import SectionProjects from "./sections/sectionProjects/SectionProjects";
+import SectionSkills from "./sections/sectionSkills/SectionSkills";
+import SectionCareer from "./sections/sectionCareer/SectionCareer";
 import PageHeader from "./components/pageHeader/PageHeader";
 import SwitchLanguage from "./components/switchLanguage/SwitchLanguage";
-import SectionCareer from "./components/sectionCareer/SectionCareer";
 import BtnScrollToTop from "./components/btnScrollToTop/BtnScrollToTop";
 import ContactForm from "./components/contactForm/ContactForm";
 import QuizzForm from "./components/quizzForm/QuizzForm";
@@ -40,13 +40,15 @@ function App() {
   const skillsRef = React.createRef();
   const careerRef = React.createRef();
 
+  // Define position Y of each section to animate navigation class active on scroll
   useEffect(() => {
+    // Initialize and round the scroll Y position to calculate sections zones on page
     setPositionScrollY(Math.round(window.scrollY) + 1);
-
+    // Collect and round the scroll Y position while scrolling to calculate sections zones on page
     document.addEventListener("scroll", (e) => {
       setPositionScrollY(Math.round(window.scrollY) + 1);
     });
-
+    // Collect and round the height of each section
     setSectionsHeight({
       aboutSection: Math.round(aboutRef.current.offsetHeight),
       projectsSection: Math.round(projectsRef.current.offsetHeight),

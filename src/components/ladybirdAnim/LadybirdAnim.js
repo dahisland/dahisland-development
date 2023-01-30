@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const LadybirdAnim = ({ data, setQuizzModale }) => {
   const [ladybirdOnHover, setLadybirdOnHover] = useState(false);
@@ -22,6 +23,11 @@ const LadybirdAnim = ({ data, setQuizzModale }) => {
       </span>
     </div>
   );
+};
+
+LadybirdAnim.propTypes = {
+  data: PropTypes.string,
+  setQuizzModale: PropTypes.func,
 };
 
 export default LadybirdAnim;

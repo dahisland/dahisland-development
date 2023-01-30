@@ -31,7 +31,6 @@
   30% {
     transform: translate(250px, -100px) rotate(150deg);
   }
-
   50% {
     transform: translate(400px, 120px) rotate(150deg);
   }
@@ -41,7 +40,6 @@
   57% {
     transform: translate(400px, 120px) rotate(300deg);
   }
-
   86% {
     background-image: url("../../assets/ladybird.png");
   }
@@ -58,12 +56,12 @@
   90% {
     background-image: url("../../assets/ladybird.png");
   }
-
   100% {
     transform: translate(0, 0) rotate(300deg);
   }
 }
 
+// Span containing the ladybird clickable quizz image
 #ladybird_quizz {
   cursor: pointer;
   position: absolute;
@@ -122,6 +120,7 @@
   }
 }
 
+// Span containing the text displayed on hover for the ladybird clickable quizz
 .ladybird_text {
   opacity: 0;
   position: absolute;

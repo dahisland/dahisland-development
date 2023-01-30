@@ -1,10 +1,6 @@
 @import "../../style/utils";
 
-.header_navigation {
-  @include responsiveTabloids {
-  }
-}
-
+// Container nav
 .navigation_navLinks {
   display: flex;
   flex-direction: column;
@@ -15,6 +11,7 @@
   }
 }
 
+// li element of ul navigation_navLinks
 .navLink {
   display: block;
   width: 100%;
@@ -29,6 +26,7 @@
     color: map-get($colors, grass);
   }
 }
+
 .navLink--active {
   display: block;
   width: 100%;

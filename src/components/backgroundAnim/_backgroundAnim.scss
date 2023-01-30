@@ -1,11 +1,12 @@
 @import "../../style/utils";
 
-@keyframes move {
+@keyframes bubble-anim {
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
+// Container for background bubbles animations
 .backgroundAnim_container {
   position: absolute;
   top: 0;
@@ -17,11 +18,12 @@
   opacity: 0.6;
 }
 
+// Bubble
 .backgroundAnim_bubble {
   border-radius: 19vmin;
   backface-visibility: hidden;
   position: absolute;
-  animation: move;
+  animation: bubble-anim;
   animation-duration: 25;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

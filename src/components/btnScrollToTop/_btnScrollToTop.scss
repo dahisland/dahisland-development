@@ -12,6 +12,7 @@
   }
 }
 
+// Button scroll to top
 .btn_goToTop {
   position: fixed;
   bottom: 20px;
@@ -40,6 +41,7 @@
   }
 }
 
+// Button scroll to top hidden
 .btn_goToTop--hide {
   opacity: 0.5;
   animation: 400ms linear forwards hideBtnGoToTop;

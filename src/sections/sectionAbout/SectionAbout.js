@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionAboutContent from "./SectionAboutContent";
-import Features from "../features/Features";
+import Features from "../../components/features/Features";
 
 const SectionAbout = React.forwardRef(({ data }, aboutRef) => {
   return (

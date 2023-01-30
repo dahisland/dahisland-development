@@ -1,3 +1,4 @@
+// Style variants animation parameters (frame motion) for the skills container
 export const skillContainer = {
   hidden: { opacity: 0 },
   visible: {
@@ -11,6 +12,7 @@ export const skillContainer = {
   },
 };
 
+// Style variants animation parameters (frame motion) for the skills items
 export const skillItem = {
   hidden: { y: 50, opacity: 0, rotate: 20, scale: 0 },
   visible: {

@@ -6,6 +6,7 @@ const SectionProjectsFigcaption = ({ dataGallery, indexGallery }) => {
   const initRandomClasses = ["", "", "", "", "", "", "", ""];
   const [randomClassesTags, setRandomClassesTags] = useState(initRandomClasses);
 
+  // Change class of each tag each time user navigate on gallery by an random class in a class list
   useEffect(() => {
     let randomizedClasses = [];
     for (let i = 0; i < classesTags.length; i++) {
@@ -18,7 +19,7 @@ const SectionProjectsFigcaption = ({ dataGallery, indexGallery }) => {
 
   return (
     <figcaption className="projectsGallery_caption">
-      <div className="galleryCaption_description">
+      <div className="galleryCaption_header">
         <h2>{dataGallery[indexGallery].name}</h2>
         {dataGallery[indexGallery].tags.map((item, index) => (
           <span

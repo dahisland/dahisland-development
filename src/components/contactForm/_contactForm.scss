@@ -1,5 +1,6 @@
 @import "../../style/utils";
 
+// Container contact form
 .contact_form {
   color: map-get($colors, night);
   padding: 2rem 0rem 0rem 0rem;
@@ -53,6 +54,7 @@
   }
 }
 
+// Container for input contact form submit and button return to form
 .contactForm_buttons {
   display: flex;
   flex-wrap: wrap;
@@ -73,37 +75,14 @@
       box-shadow: 2px 3px 5px lightgrey;
     }
   }
-}
-
-#input-submit {
-  color: map-get($colors, snow);
-  background-color: map-get($colors, sky);
-  border: 2px solid transparent;
-  padding: 5px 10px;
-  border-radius: 5px;
-  width: 170px;
-  height: 32px;
-  cursor: pointer;
-  &:hover {
-    font-weight: bold;
-    box-shadow: 2px 3px 5px lightgrey;
-  }
-}
-
-.contactForm_submitted {
-  margin: 0 auto;
-  margin-top: 2rem;
-  text-align: center;
-  p {
-    color: map-get($colors, sky);
-    margin-bottom: 3rem;
-  }
-  button {
+  #input-submit {
     color: map-get($colors, snow);
     background-color: map-get($colors, sky);
     border: 2px solid transparent;
     padding: 5px 10px;
     border-radius: 5px;
+    width: 170px;
+    height: 32px;
     cursor: pointer;
     &:hover {
       font-weight: bold;
@@ -112,6 +91,18 @@
   }
 }
 
+// Container for content displayed when message has been successfully submitted
+.contactForm_submitted {
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  p {
+    color: map-get($colors, sky);
+    margin-bottom: 3rem;
+  }
+}
+
+// Container for content displayed when message has failed on submit
 .contactForm_submitted--error {
   margin: 0 auto;
   margin-top: 2rem;

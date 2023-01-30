@@ -1,68 +1,18 @@
 @import "../../style/utils";
 
-.section_feature {
-  position: relative;
-  opacity: 0.5;
-  width: 100%;
-  flex-grow: 1;
-}
-
-.wave {
-  background: rgb(255 255 255 / 25%);
-  border-radius: 50%;
-  position: absolute;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  z-index: -1;
-}
-
-.wave:nth-of-type(1) {
-  width: 200%;
-  rotate: 1deg;
-  height: 100%;
-  bottom: -1.8em;
-  left: 0;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(2) {
-  width: 250%;
-  rotate: -1deg;
-  height: 100%;
-  bottom: -2.8em;
-  right: 0;
-  animation: wave2 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  width: 300%;
-  height: 100%;
-  bottom: -2.5em;
-  left: 0;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
 @keyframes wave {
   2% {
     transform: translateX(1);
   }
-
   25% {
     transform: translateX(-25%);
   }
-
   50% {
     transform: translateX(-50%);
   }
-
   75% {
     transform: translateX(-25%);
   }
-
   100% {
     transform: translateX(1);
   }
@@ -72,20 +22,62 @@
   2% {
     transform: translateX(1);
   }
-
   25% {
     transform: translateX(25%);
   }
-
   50% {
     transform: translateX(50%);
   }
-
   75% {
     transform: translateX(25%);
   }
-
   100% {
     transform: translateX(1);
+  }
+}
+// Container for waves animation displayed if text container in section about has a small height (use flex-grow)
+.section_feature {
+  position: relative;
+  opacity: 0.5;
+  width: 100%;
+  flex-grow: 1;
+
+  .wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 50%;
+    position: absolute;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .wave:nth-of-type(1) {
+    width: 200%;
+    rotate: 1deg;
+    height: 100%;
+    bottom: -1.8em;
+    left: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+  }
+
+  .wave:nth-of-type(2) {
+    width: 250%;
+    rotate: -1deg;
+    height: 100%;
+    bottom: -2.8em;
+    right: 0;
+    animation: wave2 18s linear reverse infinite;
+    opacity: 0.8;
+  }
+
+  .wave:nth-of-type(3) {
+    width: 300%;
+    height: 100%;
+    bottom: -2.5em;
+    left: 0;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
   }
 }

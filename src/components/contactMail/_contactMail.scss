@@ -1,5 +1,6 @@
 @import "../../style/utils";
 
+// Container for link contact mail in header
 .contact_mail {
   position: relative;
   cursor: pointer;
@@ -24,7 +25,6 @@
       font-size: map-get($sizes, xs);
     }
   }
-
   &:hover {
     svg {
       fill: map-get($colors, grass);

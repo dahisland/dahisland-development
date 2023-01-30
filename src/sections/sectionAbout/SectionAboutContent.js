@@ -15,9 +15,6 @@ const SectionAboutContent = ({ data }) => {
             <p key={data.key + index}>{item}</p>
           ))}
         </div>
-        {/* <div className="sectionAboutPresentation_img">
-          <img src={imgProfile} alt="profile"></img>
-        </div> */}
       </div>
     </div>
   );

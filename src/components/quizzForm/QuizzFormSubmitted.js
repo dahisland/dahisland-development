@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const QuizzFormSubmitted = ({
   score,
@@ -36,6 +37,13 @@ const QuizzFormSubmitted = ({
       </div>
     </div>
   );
+};
+
+QuizzFormSubmitted.propTypes = {
+  score: PropTypes.number,
+  quizzFormData: PropTypes.object,
+  setIsSubmitted: PropTypes.func,
+  openContactForm: PropTypes.func,
 };
 
 export default QuizzFormSubmitted;

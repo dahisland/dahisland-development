@@ -57,7 +57,7 @@ export const socialMediasData = [
   {
     id: "socialMedias_linkedin",
     label: "Linkedin",
-    url: "https://www.linkedin.com/in/myriam-mornet-8609b987/?originalSubdomain=fr",
+    url: "https://www.linkedin.com/in/myriam-mornet/",
     viewport: "0 0 652.53 652.45",
     xmlns: "http://www.w3.org/2000/svg",
     paths: [

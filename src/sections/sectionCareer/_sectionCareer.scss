@@ -47,13 +47,13 @@
 }
 
 .sectionCareer_formation {
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   @include responsiveTabloids {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   p {
     width: 100%;
@@ -84,12 +84,12 @@
 }
 
 .sectionCareer_elements {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   @include responsiveTabloids {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   @include responsiveSmartphones {
     flex-direction: column;

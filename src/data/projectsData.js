@@ -7,7 +7,7 @@ export const projectsData = {
         imgId: "booki.png",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
-          { name: "Website", url: "https://dahisland.github.io/booki" },
+          { name: "Website", url: "https://dahisland.github.io/booki/" },
         ],
         tags: ["HTML5", "CSS3"],
         description: "Prototype en HTML5 / CSS3",
@@ -19,11 +19,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MornetMyriam_3_19122021",
+            url: "https://github.com/dahisland/ohmyfood",
           },
           {
             name: "Website",
-            url: "https://dahisland.github.io/MornetMyriam_3_19122021",
+            url: "https://dahisland.github.io/ohmyfood/",
           },
         ],
         tags: ["HTML5", "CSS3", "SASS"],
@@ -37,11 +37,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/GameOn-website-FR",
+            url: "https://github.com/dahisland/gameon",
           },
           {
             name: "Website",
-            url: "https://dahisland.github.io/GameOn-website-FR/",
+            url: "https://dahisland.github.io/gameon/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript"],
@@ -55,11 +55,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_6_17022022",
+            url: "https://github.com/dahisland/fisheye",
           },
           {
             name: "Website",
-            url: "https://dahisland.github.io/MyriamMornet_6_17022022/",
+            url: "https://dahisland.github.io/fisheye/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Accessibilité"],

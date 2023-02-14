@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { skillContainer, skillItem } from "./sectionSkills.variants";
 import {
   SiHtml5,
+  SiJava,
   SiCss3,
   SiJavascript,
   SiReact,
@@ -45,6 +46,7 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     { link: SiAdobeaftereffects, id: "ae", color: "#9998fe" },
     { link: SiAdobepremierepro, id: "premiere", color: "#dc56fd" },
     { link: SiVisualstudio, id: "vscode", color: "#2d9eea" },
+    { link: SiJava, id: "java", color: "#d4360e" },
   ];
 
   // Function to filter icon for each skill displayed

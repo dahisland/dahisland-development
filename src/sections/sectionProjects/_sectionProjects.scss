@@ -61,8 +61,8 @@
 
   .projectsGallery_picture {
     position: relative;
-    width: 50%;
-    height: 300px;
+    width: 60%;
+    height: 350px;
     // Display description gallery image on hover
     &::after {
       opacity: 0;
@@ -96,32 +96,32 @@
       height: 265px;
     }
     @include responsiveSmartphones {
-      height: 150px;
+      height: 240px;
       width: 100%;
     }
 
     img {
       object-fit: cover;
       width: 100%;
-      height: 300px;
+      height: 350px;
       @include responsiveTabloids {
         height: 265px;
       }
       @include responsiveSmartphones {
-        height: 150px;
+        height: 240px;
       }
     }
   }
 
   // Figcaption container for the gallery, containing title, tags and links
   .projectsGallery_caption {
-    width: 50%;
+    width: 40%;
     background-color: map-get($colors, sky);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-left: 2px solid map-get($colors, sky);
-    padding: 20px;
+    padding: 17px 14px;
     @include responsiveTabloids {
       padding: 13px;
     }
@@ -133,6 +133,8 @@
     h2 {
       font-family: map-get($fonts, elite);
       margin-bottom: 1rem;
+      font-size: 1.4rem;
+      word-wrap: break-word;
       @include responsiveTabloids {
         font-size: 22px;
         margin-bottom: 5px;

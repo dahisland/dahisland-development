@@ -1,14 +1,14 @@
-import imgArgentBank from "../../assets/projects/argentbank.png";
-import imgBilled from "../../assets/projects/billed.png";
-import imgBooki from "../../assets/projects/booki.png";
-import imgFisheye from "../../assets/projects/fisheye.png";
-import imgGameon from "../../assets/projects/gameon.png";
-import imgKasa from "../../assets/projects/kasa.png";
-import imgLearnathome from "../../assets/projects/learnathome.png";
-import imgLespetitsplats from "../../assets/projects/lespetitsplats.png";
-import imgOhmyfood from "../../assets/projects/ohmyfood.png";
-import imgSportsee from "../../assets/projects/sportsee.png";
-import imgWealth from "../../assets/projects/wealth.png";
+import imgArgentBank from "../../assets/projects/argentbank02.jpg";
+import imgBilled from "../../assets/projects/billed02.jpg";
+import imgBooki from "../../assets/projects/booki02.jpg";
+import imgFisheye from "../../assets/projects/fisheye02.jpg";
+import imgGameon from "../../assets/projects/gameon02.jpg";
+import imgKasa from "../../assets/projects/kasa02.jpg";
+import imgLearnathome from "../../assets/projects/learnathome02.jpg";
+import imgLespetitsplats from "../../assets/projects/lespetitsplats02.jpg";
+import imgOhmyfood from "../../assets/projects/ohmyfood02.jpg";
+import imgSportsee from "../../assets/projects/sportsee02.jpg";
+import imgWealth from "../../assets/projects/wealth02.jpg";
 
 // Random classes array for the tags displayed on gallery caption
 export const classesTags = [
@@ -27,15 +27,15 @@ export const classesTags = [
 
 // Links for the images to display on gallery
 export const imagesProjects = [
-  { imgId: "argentbank.png", url: imgArgentBank },
-  { imgId: "billed.png", url: imgBilled },
-  { imgId: "booki.png", url: imgBooki },
-  { imgId: "fisheye.png", url: imgFisheye },
-  { imgId: "gameon.png", url: imgGameon },
-  { imgId: "kasa.png", url: imgKasa },
-  { imgId: "learnathome.png", url: imgLearnathome },
-  { imgId: "lespetitsplats.png", url: imgLespetitsplats },
-  { imgId: "ohmyfood.png", url: imgOhmyfood },
-  { imgId: "sportsee.png", url: imgSportsee },
-  { imgId: "wealth.png", url: imgWealth },
+  { imgId: "argentbank", url: imgArgentBank },
+  { imgId: "billed", url: imgBilled },
+  { imgId: "booki", url: imgBooki },
+  { imgId: "fisheye", url: imgFisheye },
+  { imgId: "gameon", url: imgGameon },
+  { imgId: "kasa", url: imgKasa },
+  { imgId: "learnathome", url: imgLearnathome },
+  { imgId: "lespetitsplats", url: imgLespetitsplats },
+  { imgId: "ohmyfood", url: imgOhmyfood },
+  { imgId: "sportsee", url: imgSportsee },
+  { imgId: "wealth", url: imgWealth },
 ];

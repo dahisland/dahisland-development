@@ -4,61 +4,61 @@ export const projectsData = {
     gallery: [
       {
         name: "Booki",
-        imgId: "booki.png",
+        imgId: "booki",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
-          { name: "Website", url: "https://dahisland.github.io/booki/" },
+          { name: "Git-pages", url: "https://dahisland.github.io/booki/" },
         ],
         tags: ["HTML5", "CSS3"],
-        description: "Prototype en HTML5 / CSS3",
-        order: 1,
+        description:
+          "Prototype responsive en HTML5 / CSS3 d'une app d'hébergements de vacances",
       },
       {
         name: "Ohmyfood",
-        imgId: "ohmyfood.png",
+        imgId: "ohmyfood",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/ohmyfood",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/ohmyfood/",
           },
         ],
         tags: ["HTML5", "CSS3", "SASS"],
         description:
-          "Prototype responsive en mobile first avec animations CSS3 dynamiques",
+          "Prototype mobile first responsive desktop & tabloids avec animations CSS3 dynamiques",
         order: 2,
       },
       {
         name: "GameOn",
-        imgId: "gameon.png",
+        imgId: "gameon",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/gameon",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/gameon/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript"],
         description:
-          "Landing page avec formulaire d'inscription développé en Javascript",
+          "Landing page responsive avec formulaire d'inscription développé en Javascript",
         order: 3,
       },
       {
         name: "Fisheye",
-        imgId: "fisheye.png",
+        imgId: "fisheye",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/fisheye",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/fisheye/",
           },
         ],
@@ -69,14 +69,14 @@ export const projectsData = {
       },
       {
         name: "Les petits plats",
-        imgId: "lespetitsplats.png",
+        imgId: "lespetitsplats",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_7_042022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_7_042022/",
           },
         ],
@@ -87,7 +87,7 @@ export const projectsData = {
       },
       {
         name: "Billed",
-        imgId: "billed.png",
+        imgId: "billed",
         links: [
           {
             name: "Github",
@@ -99,8 +99,8 @@ export const projectsData = {
         order: 6,
       },
       {
-        name: "Learn@Home",
-        imgId: "learnathome.png",
+        name: "Learn @ Home",
+        imgId: "learnathome",
         links: [
           {
             name: "Figma",
@@ -114,14 +114,14 @@ export const projectsData = {
       },
       {
         name: "Kasa",
-        imgId: "kasa.png",
+        imgId: "kasa",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_11_092022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_11_092022/",
           },
         ],
@@ -132,14 +132,14 @@ export const projectsData = {
       },
       {
         name: "Sportsee",
-        imgId: "sportsee.png",
+        imgId: "sportsee",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_12_092022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/sportsee/#/",
           },
         ],
@@ -150,7 +150,7 @@ export const projectsData = {
       },
       {
         name: "Argent Bank",
-        imgId: "argentbank.png",
+        imgId: "argentbank",
         links: [
           {
             name: "Github",
@@ -164,14 +164,14 @@ export const projectsData = {
       },
       {
         name: "Wealth Health",
-        imgId: "wealth.png",
+        imgId: "wealth",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_14_122022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
           },
         ],
@@ -187,61 +187,62 @@ export const projectsData = {
     gallery: [
       {
         name: "Booki",
-        imgId: "booki.png",
+        imgId: "booki",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
-          { name: "Website", url: "https://dahisland.github.io/booki" },
+          { name: "Git-pages", url: "https://dahisland.github.io/booki" },
         ],
         tags: ["HTML5", "CSS3"],
-        description: "Prototyping in HTML5 / CSS3",
+        description:
+          "Prototyping responsive in HTML5 / CSS3 of an holiday accommodation app",
         order: 1,
       },
       {
         name: "Ohmyfood",
-        imgId: "ohmyfood.png",
+        imgId: "ohmyfood",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MornetMyriam_3_19122021",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MornetMyriam_3_19122021",
           },
         ],
         tags: ["HTML5", "CSS3", "SASS"],
         description:
-          "Prototyping responsive in mobile first with CSS3 dynamics animations",
+          "Prototyping in mobile first responsive desktop & tabloïds with CSS3 dynamics animations",
         order: 2,
       },
       {
         name: "GameOn",
-        imgId: "gameon.png",
+        imgId: "gameon",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/GameOn-website-FR",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/GameOn-website-FR/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript"],
         description:
-          "Landing page with inscription form developed in Javascript",
+          "Landing page responsive with inscription form developed in Javascript",
         order: 3,
       },
       {
         name: "Fisheye",
-        imgId: "fisheye.png",
+        imgId: "fisheye",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_6_17022022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_6_17022022/",
           },
         ],
@@ -252,14 +253,14 @@ export const projectsData = {
       },
       {
         name: "Les petits plats",
-        imgId: "lespetitsplats.png",
+        imgId: "lespetitsplats",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_7_042022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_7_042022/",
           },
         ],
@@ -270,7 +271,7 @@ export const projectsData = {
       },
       {
         name: "Billed",
-        imgId: "billed.png",
+        imgId: "billed",
         links: [
           {
             name: "Github",
@@ -282,8 +283,8 @@ export const projectsData = {
         order: 6,
       },
       {
-        name: "Learn@Home",
-        imgId: "learnathome.png",
+        name: "Learn @ Home",
+        imgId: "learnathome",
         links: [
           {
             name: "Figma",
@@ -297,14 +298,14 @@ export const projectsData = {
       },
       {
         name: "Kasa",
-        imgId: "kasa.png",
+        imgId: "kasa",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_11_092022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_11_092022/",
           },
         ],
@@ -314,14 +315,14 @@ export const projectsData = {
       },
       {
         name: "Sportsee",
-        imgId: "sportsee.png",
+        imgId: "sportsee",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_12_092022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/sportsee/#/",
           },
         ],
@@ -332,7 +333,7 @@ export const projectsData = {
       },
       {
         name: "Argent Bank",
-        imgId: "argentbank.png",
+        imgId: "argentbank",
         links: [
           {
             name: "Github",
@@ -346,14 +347,14 @@ export const projectsData = {
       },
       {
         name: "Wealth Health",
-        imgId: "wealth.png",
+        imgId: "wealth",
         links: [
           {
             name: "Github",
             url: "https://github.com/dahisland/MyriamMornet_14_122022",
           },
           {
-            name: "Website",
+            name: "Git-pages",
             url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
           },
         ],

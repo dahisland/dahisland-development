@@ -20,6 +20,9 @@ export const skillsData = {
       { name: "Première Pro", id: "premiere", level: 3 },
       { name: "VS Code", id: "vscode", level: 3 },
       { name: "Java", id: "java", level: 1 },
+      { name: "Node js", id: "node", level: 1 },
+      { name: "Express js", id: "express", level: 1 },
+      { name: "Mongo DB", id: "mongoose", level: 1 },
     ],
   },
   en: {
@@ -43,6 +46,9 @@ export const skillsData = {
       { name: "Première Pro", id: "premiere", level: 3 },
       { name: "VS Code", id: "vscode", level: 3 },
       { name: "Java", id: "java", level: 1 },
+      { name: "Node js", id: "node", level: 1 },
+      { name: "Express js", id: "express", level: 1 },
+      { name: "Mongo DB", id: "mongoose", level: 1 },
     ],
   },
 };

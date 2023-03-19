@@ -19,8 +19,10 @@ import {
   SiAdobepremierepro,
   SiFramer,
   SiVisualstudio,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si";
-import { IoLogoNpm, IoLogoSass } from "react-icons/io";
+import { IoLogoNpm, IoLogoSass, IoLogoNodejs } from "react-icons/io";
 import { RiStarSFill, RiStarSLine, RiStarHalfSFill } from "react-icons/ri";
 
 const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
@@ -47,6 +49,9 @@ const SectionSkills = React.forwardRef(({ data }, skillsRef) => {
     { link: SiAdobepremierepro, id: "premiere", color: "#dc56fd" },
     { link: SiVisualstudio, id: "vscode", color: "#2d9eea" },
     { link: SiJava, id: "java", color: "#d4360e" },
+    { link: IoLogoNodejs, id: "node", color: "#93c324" },
+    { link: SiExpress, id: "express", color: "#fff" },
+    { link: SiMongodb, id: "mongoose", color: "#4ca147" },
   ];
 
   // Function to filter icon for each skill displayed

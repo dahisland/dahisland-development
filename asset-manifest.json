@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dahisland-development/static/css/main.431d20e5.css",
-    "main.js": "/dahisland-development/static/js/main.5fac53fe.js",
+    "main.css": "/dahisland-development/static/css/main.f0cfd482.css",
+    "main.js": "/dahisland-development/static/js/main.ea49b8fe.js",
     "static/media/heineken.jpg": "/dahisland-development/static/media/heineken.ee3def9d3572e16ef544.jpg",
     "static/media/bbko.jpg": "/dahisland-development/static/media/bbko.8c4b51196a2da7aa0897.jpg",
     "static/media/gardiens.jpg": "/dahisland-development/static/media/gardiens.a0af1256dd584f1354b4.jpg",
@@ -38,11 +38,11 @@
     "static/media/ladybird.png": "/dahisland-development/static/media/ladybird.ae6487550cc075f56181.png",
     "static/media/ladybird-opacity.png": "/dahisland-development/static/media/ladybird-opacity.22b4e1517f3cf73d95b8.png",
     "index.html": "/dahisland-development/index.html",
-    "main.431d20e5.css.map": "/dahisland-development/static/css/main.431d20e5.css.map",
-    "main.5fac53fe.js.map": "/dahisland-development/static/js/main.5fac53fe.js.map"
+    "main.f0cfd482.css.map": "/dahisland-development/static/css/main.f0cfd482.css.map",
+    "main.ea49b8fe.js.map": "/dahisland-development/static/js/main.ea49b8fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.431d20e5.css",
-    "static/js/main.5fac53fe.js"
+    "static/css/main.f0cfd482.css",
+    "static/js/main.ea49b8fe.js"
   ]
 }

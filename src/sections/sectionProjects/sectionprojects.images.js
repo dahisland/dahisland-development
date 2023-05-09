@@ -9,6 +9,7 @@ import imgLespetitsplats from "../../assets/projects/lespetitsplats02.jpg";
 import imgOhmyfood from "../../assets/projects/ohmyfood02.jpg";
 import imgSportsee from "../../assets/projects/sportsee02.jpg";
 import imgWealth from "../../assets/projects/wealth02.jpg";
+import imgSeer from "../../assets/projects/seer02.jpg";
 
 // Random classes array for the tags displayed on gallery caption
 export const classesTags = [
@@ -38,4 +39,5 @@ export const imagesProjects = [
   { imgId: "ohmyfood", url: imgOhmyfood },
   { imgId: "sportsee", url: imgSportsee },
   { imgId: "wealth", url: imgWealth },
+  { imgId: "seer", url: imgSeer },
 ];

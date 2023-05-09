@@ -12,9 +12,11 @@ const SectionProjects = React.forwardRef(({ data }, projectsRef) => {
   const [slide, setSlide] = useState(0);
 
   // Sort gallery by order to optimize data gallery changements and updates
-  const dataGallery = data.gallery.sort(function (a, b) {
-    return a.order - b.order;
-  });
+  const dataGallery = data.gallery
+    .sort(function (a, b) {
+      return a.order - b.order;
+    })
+    .reverse();
 
   // Function event to change image gallery displayed by index
   function onClickLeft() {

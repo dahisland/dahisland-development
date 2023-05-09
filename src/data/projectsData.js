@@ -12,6 +12,7 @@ export const projectsData = {
         tags: ["HTML5", "CSS3"],
         description:
           "Prototype responsive en HTML5 / CSS3 d'une app d'hébergements de vacances",
+        order: 1,
       },
       {
         name: "Ohmyfood",
@@ -73,11 +74,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_7_042022",
+            url: "https://github.com/dahisland/lespetitsplats",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_7_042022/",
+            url: "https://dahisland.github.io/lespetitsplats/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Algo"],
@@ -91,7 +92,7 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_9_062022",
+            url: "https://github.com/dahisland/Billed",
           },
         ],
         tags: ["Javascript", "Jest"],
@@ -118,11 +119,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_11_092022",
+            url: "https://github.com/dahisland/kasa",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_11_092022/",
+            url: "https://dahisland.github.io/kasa/",
           },
         ],
         tags: ["React", "Javascript", "HTML5", "CSS3"],
@@ -136,11 +137,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_12_092022",
+            url: "https://github.com/dahisland/sportsee-fullstack",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/sportsee/#/",
+            url: "https://dahisland.github.io/sportsee/",
           },
         ],
         tags: ["React", "Javascript", "Recharts", "HTML5", "CSS3"],
@@ -154,7 +155,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_13_112022",
+            url: "https://github.com/dahisland/argent-bank",
+          },
+          {
+            name: "Git-pages",
+            url: "https://dahisland.github.io/argent-bank/",
           },
         ],
         tags: ["React", "Javascript", "Redux", "HTML5", "CSS3", "JWT", "API"],
@@ -168,17 +173,35 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_14_122022",
+            url: "https://github.com/dahisland/wealth-health",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
+            url: "https://dahisland.github.io/wealth-health/",
           },
         ],
         tags: ["React", "Javascript", "Redux", "Librairies", "HTML5", "CSS3"],
         description:
           "Conversion d'une app obsolète avec Jquery en composants et librairies React",
         order: 11,
+      },
+      {
+        name: "Seer Savior",
+        imgId: "seer",
+        links: [
+          {
+            name: "Github",
+            url: "https://github.com/dahisland/seer-savior-backend",
+          },
+          {
+            name: "Heroku",
+            url: "https://seer-savior.herokuapp.com/",
+          },
+        ],
+        tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],
+        description:
+          "Projet MERN d'un jeu web en mobile first (construction du backend avec node, express, mongoDB et du front en REACT)",
+        order: 12,
       },
     ],
   },
@@ -190,7 +213,7 @@ export const projectsData = {
         imgId: "booki",
         links: [
           { name: "Github", url: "https://github.com/dahisland/booki" },
-          { name: "Git-pages", url: "https://dahisland.github.io/booki" },
+          { name: "Git-pages", url: "https://dahisland.github.io/booki/" },
         ],
         tags: ["HTML5", "CSS3"],
         description:
@@ -203,11 +226,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MornetMyriam_3_19122021",
+            url: "https://github.com/dahisland/ohmyfood",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MornetMyriam_3_19122021",
+            url: "https://dahisland.github.io/ohmyfood/",
           },
         ],
         tags: ["HTML5", "CSS3", "SASS"],
@@ -221,11 +244,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/GameOn-website-FR",
+            url: "https://github.com/dahisland/gameon",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/GameOn-website-FR/",
+            url: "https://dahisland.github.io/gameon/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript"],
@@ -239,11 +262,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_6_17022022",
+            url: "https://github.com/dahisland/fisheye",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_6_17022022/",
+            url: "https://dahisland.github.io/fisheye/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Accessibility"],
@@ -257,11 +280,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_7_042022",
+            url: "https://github.com/dahisland/lespetitsplats",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_7_042022/",
+            url: "https://dahisland.github.io/lespetitsplats/",
           },
         ],
         tags: ["HTML5", "CSS3", "Javascript", "Algo"],
@@ -275,7 +298,7 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_9_062022",
+            url: "https://github.com/dahisland/Billed",
           },
         ],
         tags: ["Javascript", "Jest"],
@@ -302,11 +325,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_11_092022",
+            url: "https://github.com/dahisland/kasa",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_11_092022/",
+            url: "https://dahisland.github.io/kasa/",
           },
         ],
         tags: ["React", "Javascript", "HTML5", "CSS3"],
@@ -319,11 +342,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_12_092022",
+            url: "https://github.com/dahisland/sportsee-fullstack",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/sportsee/#/",
+            url: "https://dahisland.github.io/sportsee/",
           },
         ],
         tags: ["React", "Javascript", "Recharts", "HTML5", "CSS3"],
@@ -337,7 +360,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_13_112022",
+            url: "https://github.com/dahisland/argent-bank",
+          },
+          {
+            name: "Git-pages",
+            url: "https://dahisland.github.io/argent-bank/",
           },
         ],
         tags: ["React", "Javascript", "Redux", "HTML5", "CSS3", "JWT", "API"],
@@ -351,17 +378,35 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/MyriamMornet_14_122022",
+            url: "https://github.com/dahisland/wealth-health",
           },
           {
             name: "Git-pages",
-            url: "https://dahisland.github.io/MyriamMornet_14_122022/#/",
+            url: "https://dahisland.github.io/wealth-health/",
           },
         ],
         tags: ["React", "Javascript", "Libraries", "Redux", "HTML5", "CSS3"],
         description:
           "Obsolete app with Jquery conversion into React components and NPM libraries",
         order: 11,
+      },
+      {
+        name: "Seer Savior",
+        imgId: "seer",
+        links: [
+          {
+            name: "Github",
+            url: "https://github.com/dahisland/seer-savior-backend",
+          },
+          {
+            name: "Heroku",
+            url: "https://seer-savior.herokuapp.com/",
+          },
+        ],
+        tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],
+        description:
+          "MERN project of a web game in mobile first (backend implementation with node, express, mongoDB and front with React)",
+        order: 12,
       },
     ],
   },

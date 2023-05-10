@@ -194,8 +194,8 @@ export const projectsData = {
             url: "https://github.com/dahisland/seer-savior-backend",
           },
           {
-            name: "Heroku",
-            url: "https://seer-savior.herokuapp.com/",
+            name: "Render",
+            url: "https://seer-savior.onrender.com/",
           },
         ],
         tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],
@@ -399,8 +399,8 @@ export const projectsData = {
             url: "https://github.com/dahisland/seer-savior-backend",
           },
           {
-            name: "Heroku",
-            url: "https://seer-savior.herokuapp.com/",
+            name: "Render",
+            url: "https://seer-savior.onrender.com/",
           },
         ],
         tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],

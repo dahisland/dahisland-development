@@ -191,11 +191,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/seer-savior-backend",
+            url: "https://github.com/dahisland/seer-savior-vercel",
           },
           {
-            name: "Render",
-            url: "https://seer-savior.onrender.com/",
+            name: "Vercel",
+            url: "https://seer-savior.vercel.app/",
           },
         ],
         tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],
@@ -396,11 +396,11 @@ export const projectsData = {
         links: [
           {
             name: "Github",
-            url: "https://github.com/dahisland/seer-savior-backend",
+            url: "https://github.com/dahisland/seer-savior-vercel",
           },
           {
-            name: "Render",
-            url: "https://seer-savior.onrender.com/",
+            name: "Vercel",
+            url: "https://seer-savior.vercel.app/",
           },
         ],
         tags: ["React", "Redux", "Node", "Express", "MongoDB", "API"],
